@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>دليل شامل 2024: أفضل أحجام ومدة الفيديو لكل منصة تواصل اجتماعي</title>
+    <meta name="description" content="جدول مرجعي كامل لمتطلبات الفيديو على جميع المنصات: YouTube، Instagram، TikTok، Snapchat، Twitter، Facebook، LinkedIn. الأبعاد، المدة، نسبة العرض، وأفضل الممارسات">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="icon" type="image/svg+xml" href="{{ url_for('static', filename='favicon.svg') }}">
+    <style>
+        body {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        
+        .article-header {
+            text-align: center;
+            padding: 60px 20px 30px;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+        }
+        
+        .article-header h1 {
+            color: white;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            line-height: 1.3;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+        
+        .article-meta {
+            color: white;
+            font-size: 1.1em;
+            margin-bottom: 20px;
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .back-btn {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            padding: 10px 25px;
+            border-radius: 20px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 15px;
+            transition: all 0.3s;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+        }
+        
+        .back-btn:hover {
+            background: rgba(255, 255, 255, 0.3);
+            transform: translateY(-2px);
+        }
+        
+        .article-content {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 50px;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+        }
+        
+        .article-content h2 {
+            color: #667eea;
+            font-size: 2em;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #667eea;
+        }
+        
+        .article-content h3 {
+            color: #764ba2;
+            font-size: 1.5em;
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
+        
+        .article-content p {
+            font-size: 1.1em;
+            line-height: 2;
+            color: #333;
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+        
+        .article-content ul,
+        .article-content ol {
+            margin: 20px 0;
+            padding-right: 30px;
+        }
+        
+        .article-content li {
+            font-size: 1.05em;
+            line-height: 1.9;
+            margin-bottom: 15px;
+            color: #444;
+        }
+        
+        .article-content strong {
+            color: #667eea;
+            font-weight: 600;
+        }
+        
+        .platform-card {
+            background: linear-gradient(135deg, #667eea15 0%, #764ba215 100%);
+            border-left: 5px solid #667eea;
+            padding: 30px;
+            margin: 30px 0;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .platform-card h3 {
+            color: #667eea;
+            font-size: 1.8em;
+            margin-top: 0;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        
+        .platform-icon {
+            font-size: 1.3em;
+        }
+        
+        .specs-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+            margin: 20px 0;
+        }
+        
+        .spec-item {
+            background: white;
+            padding: 15px;
+            border-radius: 10px;
+            border-right: 3px solid #667eea;
+        }
+        
+        .spec-item strong {
+            display: block;
+            color: #667eea;
+            margin-bottom: 8px;
+            font-size: 1.05em;
+        }
+        
+        .comparison-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 30px 0;
+            background: white;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            border-radius: 15px;
+            overflow: hidden;
+        }
+        
+        .comparison-table thead {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+        
+        .comparison-table th {
+            padding: 20px 15px;
+            text-align: right;
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+        
+        .comparison-table td {
+            padding: 18px 15px;
+            border-bottom: 1px solid #eee;
+            font-size: 1.05em;
+        }
+        
+        .comparison-table tr:hover {
+            background: #f8f9ff;
+        }
+        
+        .comparison-table tbody tr:last-child td {
+            border-bottom: none;
+        }
+        
+        .pro-tip {
+            background: #fffbea;
+            border-left: 4px solid #ffc107;
+            padding: 25px;
+            margin: 30px 0;
+            border-radius: 10px;
+        }
+        
+        .pro-tip strong {
+            color: #f57c00;
+        }
+        
+        .quick-reference {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px;
+            border-radius: 20px;
+            margin: 40px 0;
+        }
+        
+        .quick-reference h3 {
+            color: white;
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 2em;
+        }
+        
+        .quick-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+        
+        .quick-item {
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(10px);
+            padding: 20px;
+            border-radius: 15px;
+            text-align: center;
+            border: 2px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        .quick-item h4 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+        
+        .cta-box {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px;
+            border-radius: 15px;
+            text-align: center;
+            margin: 40px 0;
+        }
+        
+        .cta-box h3 {
+            color: white;
+            margin-bottom: 20px;
+            font-size: 2em;
+        }
+        
+        .cta-btn {
+            display: inline-block;
+            background: white;
+            color: #667eea;
+            padding: 15px 40px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.2em;
+            transition: all 0.3s;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+        }
+        
+        .cta-btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+        }
+        
+        @media only screen and (max-width: 768px) {
+            .article-header h1 {
+                font-size: 1.8em;
+            }
+            
+            .article-content {
+                padding: 30px 20px;
+                margin: 20px 10px;
+            }
+            
+            .comparison-table {
+                font-size: 0.85em;
+            }
+            
+            .comparison-table th,
+            .comparison-table td {
+                padding: 12px 8px;
+            }
+            
+            .specs-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="article-header">
+        <h1>📱 دليل شامل 2024: أفضل أحجام ومدة الفيديو لكل منصة</h1>
+        <div class="article-meta">
+            <span>📅 ديسمبر 2024</span>
+            <span>⏱️ 10 دقائق قراءة</span>
+            <span>📊 مرجع شامل</span>
+        </div>
+        <a href="/blog" class="back-btn">← العودة للمدونة</a>
+    </div>
+
+    <div class="article-content">
+        <h2>📌 لماذا تحتاج هذا الدليل؟</h2>
+        <p>
+            كل منصة تواصل اجتماعي لها متطلبات فريدة للفيديو: الأبعاد، نسبة العرض للارتفاع، المدة القصوى، حجم الملف، 
+            ومعدل الإطارات. استخدام المواصفات الخاطئة يعني:
+        </p>
+        <ul>
+            <li>❌ فيديو مقصوص أو مشوه</li>
+            <li>❌ جودة منخفضة</li>
+            <li>❌ وصول أقل (الخوارزميات تفضل المواصفات الصحيحة)</li>
+            <li>❌ تجربة سيئة للمشاهد</li>
+        </ul>
+        <p>
+            هذا الدليل المرجعي الشامل يوفر لك <strong>كل المعلومات التي تحتاجها</strong> لإنشاء فيديوهات مثالية 
+            لكل منصة. احفظ هذه الصفحة كمرجع دائم!
+        </p>
+
+        <div class="quick-reference">
+            <h3>⚡ مرجع سريع: المدة المثالية</h3>
+            <div class="quick-grid">
+                <div class="quick-item">
+                    <h4>📺 YouTube</h4>
+                    <p>7-15 دقيقة</p>
+                </div>
+                <div class="quick-item">
+                    <h4>📸 Instagram</h4>
+                    <p>15-30 ثانية</p>
+                </div>
+                <div class="quick-item">
+                    <h4>🎵 TikTok</h4>
+                    <p>15-60 ثانية</p>
+                </div>
+                <div class="quick-item">
+                    <h4>👻 Snapchat</h4>
+                    <p>10-30 ثانية</p>
+                </div>
+                <div class="quick-item">
+                    <h4>🐦 Twitter</h4>
+                    <p>30-45 ثانية</p>
+                </div>
+                <div class="quick-item">
+                    <h4>👥 Facebook</h4>
+                    <p>1-3 دقائق</p>
+                </div>
+            </div>
+        </div>
+
+        <h2>📊 الجدول المرجعي الكامل</h2>
+        
+        <table class="comparison-table">
+            <thead>
+                <tr>
+                    <th>المنصة</th>
+                    <th>نسبة العرض</th>
+                    <th>الدقة الموصى بها</th>
+                    <th>المدة القصوى</th>
+                    <th>المدة المثالية</th>
+                    <th>حجم الملف</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>📺 YouTube</strong></td>
+                    <td>16:9</td>
+                    <td>1920×1080 (Full HD)</td>
+                    <td>12 ساعة</td>
+                    <td>7-15 دقيقة</td>
+                    <td>128 GB</td>
+                </tr>
+                <tr>
+                    <td><strong>📸 Instagram Feed</strong></td>
+                    <td>1:1 أو 4:5</td>
+                    <td>1080×1080 (مربع)</td>
+                    <td>60 ثانية</td>
+                    <td>30-60 ثانية</td>
+                    <td>4 GB</td>
+                </tr>
+                <tr>
+                    <td><strong>📸 Instagram Reels</strong></td>
+                    <td>9:16</td>
+                    <td>1080×1920</td>
+                    <td>90 ثانية</td>
+                    <td>15-30 ثانية</td>
+                    <td>4 GB</td>
+                </tr>
+                <tr>
+                    <td><strong>📸 Instagram Stories</strong></td>
+                    <td>9:16</td>
+                    <td>1080×1920</td>
+                    <td>60 ثانية</td>
+                    <td>15 ثانية</td>
+                    <td>4 GB</td>
+                </tr>
+                <tr>
+                    <td><strong>🎵 TikTok</strong></td>
+                    <td>9:16</td>
+                    <td>1080×1920</td>
+                    <td>10 دقائق</td>
+                    <td>15-60 ثانية</td>
+                    <td>287.6 MB</td>
+                </tr>
+                <tr>
+                    <td><strong>👻 Snapchat Stories</strong></td>
+                    <td>9:16</td>
+                    <td>1080×1920</td>
+                    <td>غير محدود</td>
+                    <td>10 ثواني/سناب</td>
+                    <td>--</td>
+                </tr>
+                <tr>
+                    <td><strong>👻 Snapchat Spotlight</strong></td>
+                    <td>9:16</td>
+                    <td>1080×1920</td>
+                    <td>60 ثانية</td>
+                    <td>15-30 ثانية</td>
+                    <td>--</td>
+                </tr>
+                <tr>
+                    <td><strong>🐦 Twitter</strong></td>
+                    <td>16:9 أو 1:1</td>
+                    <td>1920×1080</td>
+                    <td>2 دقيقة 20 ثانية</td>
+                    <td>30-45 ثانية</td>
+                    <td>512 MB</td>
+                </tr>
+                <tr>
+                    <td><strong>👥 Facebook Feed</strong></td>
+                    <td>16:9 أو 1:1</td>
+                    <td>1920×1080</td>
+                    <td>240 دقيقة</td>
+                    <td>1-3 دقائق</td>
+                    <td>10 GB</td>
+                </tr>
+                <tr>
+                    <td><strong>👥 Facebook Stories</strong></td>
+                    <td>9:16</td>
+                    <td>1080×1920</td>
+                    <td>20 ثانية</td>
+                    <td>15 ثانية</td>
+                    <td>4 GB</td>
+                </tr>
+                <tr>
+                    <td><strong>💼 LinkedIn</strong></td>
+                    <td>16:9 أو 1:1</td>
+                    <td>1920×1080</td>
+                    <td>10 دقائق</td>
+                    <td>30-90 ثانية</td>
+                    <td>5 GB</td>
+                </tr>
+                <tr>
+                    <td><strong>📌 Pinterest</strong></td>
+                    <td>2:3 أو 1:1</td>
+                    <td>1000×1500</td>
+                    <td>15 دقائق</td>
+                    <td>6-15 ثانية</td>
+                    <td>2 GB</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>📺 YouTube: التفاصيل الكاملة</h2>
+        
+        <div class="platform-card">
+            <h3><span class="platform-icon">📺</span> YouTube</h3>
+            
+            <div class="specs-grid">
+                <div class="spec-item">
+                    <strong>نسب العرض المدعومة:</strong>
+                    16:9 (أفقي - الأكثر شيوعاً)<br>
+                    9:16 (عمودي - YouTube Shorts)<br>
+                    1:1 (مربع)
+                </div>
+                <div class="spec-item">
+                    <strong>الدقة:</strong>
+                    - HD: 1280×720<br>
+                    - Full HD: 1920×1080 ⭐<br>
+                    - 4K: 3840×2160<br>
+                    - 8K: 7680×4320
+                </div>
+                <div class="spec-item">
+                    <strong>معدل الإطارات:</strong>
+                    24, 25, 30, 48, 50, 60 fps
+                </div>
+                <div class="spec-item">
+                    <strong>الصيغ المدعومة:</strong>
+                    MP4, MOV, AVI, WMV, FLV, 3GP
+                </div>
+            </div>
+
+            <h4 style="color: #667eea; margin-top: 25px;">💡 نصائح YouTube:</h4>
+            <ul>
+                <li><strong>المدة المثالية:</strong> 7-15 دقيقة للفيديوهات العادية (توازن بين المشاهدة والإعلانات)</li>
+                <li><strong>YouTube Shorts:</strong> 60 ثانية أو أقل، عمودي (9:16) فقط</li>
+                <li><strong>الـ Hook:</strong> اجذب الانتباه في أول 15 ثانية لتقليل معدل الارتداد</li>
+                <li><strong>SEO:</strong> العنوان والوصف مهمان جداً، استخدم كلمات مفتاحية</li>
+                <li><strong>الصورة المصغرة:</strong> دقة 1280×720، حجم < 2 MB</li>
+            </ul>
+        </div>
+
+        <h2>📸 Instagram: التفاصيل الكاملة</h2>
+        
+        <div class="platform-card">
+            <h3><span class="platform-icon">📸</span> Instagram</h3>
+            
+            <h4 style="color: #667eea; margin-bottom: 15px;">أنواع الفيديو على Instagram:</h4>
+
+            <div class="spec-item" style="margin-bottom: 20px;">
+                <strong>1. المنشورات العادية (Feed Posts)</strong>
+                <p>• نسبة العرض: 1:1 (مربع) أو 4:5 (عمودي)<br>
+                • الدقة: 1080×1080 (مربع) أو 1080×1350 (عمودي)<br>
+                • المدة: حتى 60 ثانية<br>
+                • المثالي: 30-60 ثانية</p>
+            </div>
+
+            <div class="spec-item" style="margin-bottom: 20px;">
+                <strong>2. Instagram Reels</strong>
+                <p>• نسبة العرض: 9:16 (عمودي كامل) ⭐<br>
+                • الدقة: 1080×1920<br>
+                • المدة: حتى 90 ثانية<br>
+                • المثالي: <strong>15-30 ثانية</strong> (أعلى وصول)<br>
+                • معدل الإطارات: 30 fps على الأقل</p>
+            </div>
+
+            <div class="spec-item" style="margin-bottom: 20px;">
+                <strong>3. Instagram Stories</strong>
+                <p>• نسبة العرض: 9:16<br>
+                • الدقة: 1080×1920<br>
+                • المدة: حتى 60 ثانية<br>
+                • المثالي: 15 ثانية (المعظم يشاهد بسرعة)</p>
+            </div>
+
+            <h4 style="color: #667eea; margin-top: 25px;">💡 نصائح Instagram:</h4>
+            <ul>
+                <li><strong>Reels = الأولوية:</strong> خوارزمية Instagram تدفع Reels أكثر من أي نوع آخر</li>
+                <li><strong>أول 3 ثواني:</strong> حاسمة جداً - اجذب الانتباه فوراً</li>
+                <li><strong>Captions:</strong> 56% يشاهدون بدون صوت - أضف نصوص!</li>
+                <li><strong>Hashtags:</strong> 5-10 هاشتاجات ذات صلة (لا تبالغ)</li>
+                <li><strong>الموسيقى:</strong> استخدم أصوات ترندينج لزيادة الوصول</li>
+            </ul>
+        </div>
+
+        <h2>🎵 TikTok: التفاصيل الكاملة</h2>
+        
+        <div class="platform-card">
+            <h3><span class="platform-icon">🎵</span> TikTok</h3>
+            
+            <div class="specs-grid">
+                <div class="spec-item">
+                    <strong>نسبة العرض:</strong>
+                    9:16 (عمودي) - الوحيد المقبول تقريباً
+                </div>
+                <div class="spec-item">
+                    <strong>الدقة:</strong>
+                    1080×1920 (Full HD عمودي)<br>
+                    الحد الأدنى: 720×1280
+                </div>
+                <div class="spec-item">
+                    <strong>المدة:</strong>
+                    القصوى: 10 دقائق<br>
+                    المثالية: <strong>15-60 ثانية</strong>
+                </div>
+                <div class="spec-item">
+                    <strong>معدل الإطارات:</strong>
+                    30 fps أو 60 fps
+                </div>
+            </div>
+
+            <h4 style="color: #667eea; margin-top: 25px;">💡 نصائح TikTok:</h4>
+            <ul>
+                <li><strong>معدل الإكمال = الملك:</strong> الفيديوهات القصيرة (15-30 ثانية) تحصل على إكمال أعلى</li>
+                <li><strong>Hook في ثانية واحدة:</strong> المستخدمون يمررون بسرعة فائقة</li>
+                <li><strong>Loop Technique:</strong> اجعل النهاية تتصل بالبداية لإعادة المشاهدة</li>
+                <li><strong>الترندات:</strong> استخدم الأصوات والهاشتاجات الشائعة</li>
+                <li><strong>التفاعل:</strong> رد على التعليقات في أول ساعة</li>
+            </ul>
+        </div>
+
+        <div class="cta-box">
+            <h3>✂️ جاهز لتقسيم فيديوهاتك بالمواصفات المثالية؟</h3>
+            <p>استخدم SplitMyVideo لإنشاء فيديوهات مثالية لكل منصة في دقائق!</p>
+            <a href="/" class="cta-btn">ابدأ التقسيم الآن →</a>
+        </div>
+
+        <h2>👻 Snapchat: التفاصيل الكاملة</h2>
+        
+        <div class="platform-card">
+            <h3><span class="platform-icon">👻</span> Snapchat</h3>
+            
+            <div class="spec-item" style="margin-bottom: 20px;">
+                <strong>Snapchat Stories:</strong>
+                <p>• نسبة العرض: 9:16<br>
+                • الدقة: 1080×1920<br>
+                • المدة: 10 ثواني لكل سناب (يمكن نشر متعددة)<br>
+                • المثالي: سلسلة 6-12 سناب (60-120 ثانية إجمالاً)</p>
+            </div>
+
+            <div class="spec-item" style="margin-bottom: 20px;">
+                <strong>Snapchat Spotlight:</strong>
+                <p>• نسبة العرض: 9:16<br>
+                • الدقة: 1080×1920<br>
+                • المدة: حتى 60 ثانية<br>
+                • المثالي: <strong>15-30 ثانية</strong><br>
+                • مكافآت مالية: متاحة! 💰</p>
+            </div>
+
+            <h4 style="color: #667eea; margin-top: 25px;">💡 نصائح Snapchat:</h4>
+            <ul>
+                <li><strong>Spotlight = الفرصة:</strong> يمكنك كسب آلاف الدولارات من فيديو فيروسي واحد</li>
+                <li><strong>النصوص ضرورية:</strong> Snapchat معروف بالنصوص الكبيرة على الفيديو</li>
+                <li><strong>Stickers وEmojis:</strong> جزء من ثقافة Snapchat - استخدمها!</li>
+                <li><strong>أول ثانيتين:</strong> اجذب الانتباه أو يمررون لفيديو آخر</li>
+            </ul>
+        </div>
+
+        <h2>🔧 كيف تستخدم SplitMyVideo لكل منصة</h2>
+        
+        <div class="pro-tip">
+            <h4 style="color: #f57c00; margin-top: 0;">💡 استراتيجية ذكية:</h4>
+            <p>
+                بدلاً من إنشاء فيديو مختلف لكل منصة من الصفر، <strong>أنشئ فيديو واحد بجودة عالية</strong> 
+                (مثلاً 1920×1080 أفقي)، ثم استخدم SplitMyVideo لـ:
+            </p>
+            <ol>
+                <li><strong>تقسيم بالثواني:</strong> للمنصات التي تفضل فيديوهات قصيرة (TikTok، Instagram Reels)</li>
+                <li><strong>استخراج مقاطع:</strong> لاستخراج أفضل اللحظات لكل منصة</li>
+                <li><strong>إعادة الاستخدام:</strong> نفس المحتوى، صيغ مختلفة، وصول أوسع!</li>
+            </ol>
+        </div>
+
+        <h3>مثال عملي: فيديو واحد → 6 منصات</h3>
+        
+        <p><strong>لنفترض أن لديك فيديو تعليمي 10 دقائق:</strong></p>
+
+        <ol>
+            <li><strong>YouTube:</strong> انشر الفيديو كاملاً (10 دقائق، 16:9)</li>
+            <li><strong>Instagram Reels:</strong> اقتطع 5 لحظات قوية (كل واحدة 30 ثانية، 9:16)</li>
+            <li><strong>TikTok:</strong> نفس المقاطع الـ 5 (30 ثانية، 9:16)</li>
+            <li><strong>Snapchat Spotlight:</strong> نفس المقاطع أو أقصر (15-30 ثانية، 9:16)</li>
+            <li><strong>Facebook:</strong> قسّم إلى 3 أجزاء (كل واحد 3 دقائق، 1:1 أو 16:9)</li>
+            <li><strong>Twitter:</strong> خلاصة سريعة (45 ثانية، 16:9)</li>
+        </ol>
+
+        <p style="background: #f0f7ff; padding: 20px; border-radius: 10px; border-right: 4px solid #667eea;">
+            <strong>النتيجة:</strong> من فيديو واحد، حصلت على <strong>15+ مقطع</strong> محسّن لـ 6 منصات مختلفة، 
+            مما يزيد وصولك بشكل هائل! 🚀
+        </p>
+
+        <h2>📊 جدول القرارات السريعة</h2>
+        
+        <table class="comparison-table">
+            <thead>
+                <tr>
+                    <th>السيناريو</th>
+                    <th>المنصة المثالية</th>
+                    <th>المدة</th>
+                    <th>نسبة العرض</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>فيديو تعليمي طويل</td>
+                    <td>YouTube</td>
+                    <td>7-15 دقيقة</td>
+                    <td>16:9</td>
+                </tr>
+                <tr>
+                    <td>حيلة سريعة</td>
+                    <td>TikTok, Instagram Reels</td>
+                    <td>15-30 ثانية</td>
+                    <td>9:16</td>
+                </tr>
+                <tr>
+                    <td>محتوى مضحك</td>
+                    <td>TikTok, Snapchat Spotlight</td>
+                    <td>15-30 ثانية</td>
+                    <td>9:16</td>
+                </tr>
+                <tr>
+                    <td>قصة شخصية</td>
+                    <td>Instagram/Snapchat Stories</td>
+                    <td>15 ثانية/جزء</td>
+                    <td>9:16</td>
+                </tr>
+                <tr>
+                    <td>محتوى احترافي</td>
+                    <td>LinkedIn</td>
+                    <td>30-90 ثانية</td>
+                    <td>16:9 أو 1:1</td>
+                </tr>
+                <tr>
+                    <td>أخبار سريعة</td>
+                    <td>Twitter</td>
+                    <td>30-45 ثانية</td>
+                    <td>16:9</td>
+                </tr>
+                <tr>
+                    <td>محتوى عائلي</td>
+                    <td>Facebook</td>
+                    <td>1-3 دقائق</td>
+                    <td>1:1 أو 16:9</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>🎓 نصائح عامة لجميع المنصات</h2>
+
+        <h3>1. الجودة مهمة (لكن ليست كل شيء)</h3>
+        <p>
+            4K رائع، لكن 1080p كافٍ تماماً لمعظم المنصات. المحتوى والإبداع أهم من الدقة الفائقة. 
+            فيديو 1080p ممتاز أفضل من فيديو 4K ممل!
+        </p>
+
+        <h3>2. الصوت مهم جداً</h3>
+        <p>
+            الفيديو ذو الصوت السيئ يُغلق فوراً. استثمر في ميكروفون جيد أو استخدم موسيقى خلفية مناسبة.
+        </p>
+
+        <h3>3. النصوص (Captions) ضرورية</h3>
+        <p>
+            85% من فيديوهات السوشيال ميديا تُشاهد بدون صوت! النصوص ليست خياراً - إنها ضرورة.
+        </p>
+
+        <h3>4. الثواني الأولى = كل شيء</h3>
+        <p>
+            <strong>قاعدة الـ 3 ثواني:</strong> إذا لم تجذب الانتباه في 3 ثواني، خسرت 70% من المشاهدين المحتملين.
+        </p>
+
+        <h3>5. التسق = المفتاح</h3>
+        <p>
+            انشر بانتظام. خوارزميات جميع المنصات تكافئ المبدعين المتسقين.
+        </p>
+
+        <h2>🎯 الخلاصة</h2>
+        <p>
+            فهم متطلبات كل منصة وتحسين فيديوهاتك وفقاً لها هو الفرق بين محتوى عادي ومحتوى فيروسي. 
+            استخدم هذا الدليل كمرجع دائم، وطبّق المواصفات المذكورة للحصول على أفضل جودة ووصول على كل منصة.
+        </p>
+
+        <p><strong>النقاط الرئيسية:</strong></p>
+        <ul>
+            <li>✅ استخدم النسب الصحيحة لكل منصة (9:16 للفيديوهات القصيرة، 16:9 لليوتيوب)</li>
+            <li>✅ التزم بالمدد المثالية (قصير للوصول الأوسع)</li>
+            <li>✅ اجذب الانتباه في أول 3 ثواني</li>
+            <li>✅ أضف نصوص دائماً</li>
+            <li>✅ أعد استخدام المحتوى بذكاء عبر منصات متعددة</li>
+        </ul>
+
+        <div class="cta-box">
+            <h3>🚀 حوّل فيديو واحد إلى محتوى لـ 6 منصات!</h3>
+            <p>استخدم SplitMyVideo لتقسيم وتحسين فيديوهاتك لجميع المنصات في دقائق</p>
+            <a href="/" class="cta-btn">ابدأ مجاناً الآن →</a>
+        </div>
+
+        <hr style="margin: 40px 0; border: none; border-top: 2px solid #eee;">
+
+        <h3>📚 اقرأ المزيد:</h3>
+        <ul style="list-style: none; padding: 0;">
+            <li style="margin-bottom: 15px;">
+                <a href="/blog/split-youtube-for-instagram" style="color: #667eea; font-size: 1.1em; text-decoration: none;">
+                    📸 كيف تقسم فيديو YouTube لـ Instagram →
+                </a>
+            </li>
+            <li style="margin-bottom: 15px;">
+                <a href="/blog/split-video-for-tiktok" style="color: #667eea; font-size: 1.1em; text-decoration: none;">
+                    🎵 دليل تقسيم الفيديو لـ TikTok →
+                </a>
+            </li>
+            <li style="margin-bottom: 15px;">
+                <a href="/blog/split-video-for-snapchat" style="color: #667eea; font-size: 1.1em; text-decoration: none;">
+                    👻 استراتيجيات تقسيم الفيديو لـ Snapchat →
+                </a>
+            </li>
+            <li style="margin-bottom: 15px;">
+                <a href="/how-to-use" style="color: #667eea; font-size: 1.1em; text-decoration: none;">
+                    🎓 كيفية استخدام SplitMyVideo →
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <footer style="background: rgba(0,0,0,0.3); color: white; padding: 30px; text-align: center;">
+        <p>&copy; 2024 SplitMyVideo. جميع الحقوق محفوظة.</p>
+        <p style="margin-top: 10px;">
+            <a href="/" style="color: white; margin: 0 10px;">الصفحة الرئيسية</a>
+            <a href="/blog" style="color: white; margin: 0 10px;">المدونة</a>
+            <a href="/about" style="color: white; margin: 0 10px;">من نحن</a>
+            <a href="mailto:WhalesEC2021@hotmail.com" style="color: white; margin: 0 10px;">اتصل بنا</a>
+        </p>
+    </footer>
+</body>
+</html>

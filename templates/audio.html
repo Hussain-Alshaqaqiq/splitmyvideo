@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+     <!-- Google AdSense Verification Code -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5538584874036951"
+     crossorigin="anonymous"></script>
+
+    <title>تحويل واستخراج الصوت - Audio Converter</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="{{ url_for('static', filename='favicon.svg') }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ url_for('static', filename='favicon-32x32.png') }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ url_for('static', filename='favicon-16x16.png') }}">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ url_for('static', filename='favicon-192x192.png') }}">
+    
+
+</head>
+<body>
+    <!-- Sticky Banner Ad -->
+    <div class="ad-sticky-banner" id="stickyBannerAd">
+        <div class="ad-content">
+            <!-- Google AdSense Code Here - Sticky Banner -->
+                <ins class="adsbygoogle"
+                    style="display:block"
+                    data-ad-client="ca-pub-5538584874036951"
+                    data-ad-slot="1234567890"
+                    data-ad-format="auto"
+                    data-full-width-responsive="true"></ins>
+                <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+        </div>
+    </div>
+
+    <!-- Left Sidebar Ad -->
+    <div class="ad-sidebar-container ad-sidebar-left">
+        <div class="ad-sidebar-content">
+            <!-- Google AdSense Code Here - Left Sidebar -->
+                <ins class="adsbygoogle"
+                    style="display:block"
+                    data-ad-client="ca-pub-5538584874036951"
+                    data-ad-slot="1234567890"
+                    data-ad-format="auto"
+                    data-full-width-responsive="true"></ins>
+                <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+        </div>
+    </div>
+
+    <!-- Right Sidebar Ad -->
+    <div class="ad-sidebar-container ad-sidebar-right">
+        <div class="ad-sidebar-content">
+            <!-- Google AdSense Code Here - Right Sidebar -->
+                <ins class="adsbygoogle"
+                    style="display:block"
+                    data-ad-client="ca-pub-5538584874036951"
+                    data-ad-slot="1234567890"
+                    data-ad-format="auto"
+                    data-full-width-responsive="true"></ins>
+                <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+        </div>
+    </div>
+
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <h1>🎵 تحويل واستخراج الصوت</h1>
+            <p>حول الصوت من صيغة لأخرى أو استخرج الصوت من الفيديو</p>
+            <div style="display: flex; gap: 10px; justify-content: center; margin-top: 15px; flex-wrap: wrap;">
+                <a href="/" class="btn btn-secondary">← التقسيم</a>
+                <a href="/convert" class="btn btn-secondary">تحويل الفيديو</a>
+            </div>
+        </header>
+
+        <!-- Ad Slot 1: Top Banner (After Header) -->
+        <div class="ad-container ad-top">
+            <!-- Google AdSense Code Here -->
+                <ins class="adsbygoogle"
+                    style="display:block"
+                    data-ad-client="ca-pub-5538584874036951"
+                    data-ad-slot="1234567890"
+                    data-ad-format="auto"
+                    data-full-width-responsive="true"></ins>
+                <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+        </div>
+        
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Upload Section -->
+            <div class="mode-tabs" role="tablist" aria-label="اختر العملية">
+                <button class="mode-tab active" id="modeConvert" role="tab"
+                        aria-selected="true" aria-controls="convertPanel">
+                    🔄 تحويل الصوت
+                </button>
+                <button class="mode-tab" id="modeMerge" role="tab"
+                        aria-selected="false" aria-controls="mergePanel">
+                    🔗 دمج ملفات صوتية
+                </button>
+            </div>
+
+            <div class="card upload-card" id="convertPanel">
+                <div class="card-header">
+                    <h2>📤 رفع الملف</h2>
+                </div>
+                <div class="card-body">
+                    <div class="upload-area" id="uploadArea">
+                        <div class="upload-icon">🎵</div>
+                        <p class="upload-text">اسحب وأفلت الملف هنا</p>
+                        <p class="upload-subtext">صوت أو فيديو</p>
+                        <label for="fileInput" class="btn btn-primary" onclick="event.stopPropagation()">اختر ملف</label>
+                        <input type="file" id="fileInput" accept="audio/*,video/*" hidden>
+                        <p class="upload-info">الصيغ المدعومة: MP3, WAV, AAC, OGG, FLAC | MP4, AVI, MOV, MKV</p>
+                    </div>
+                    
+                    <!-- File Info (Hidden initially) -->
+                    <div class="video-info" id="fileInfo" style="display: none;">
+                        <div class="info-item">
+                            <span class="info-label">📁 اسم الملف:</span>
+                            <span class="info-value" id="fileName"></span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">📋 النوع:</span>
+                            <span class="info-value" id="fileType"></span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">📋 الصيغة الحالية:</span>
+                            <span class="info-value" id="currentFormat"></span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">📏 الحجم:</span>
+                            <span class="info-value" id="fileSize"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Convert Settings -->
+            <div class="card split-card" id="convertCard" style="display: none;">
+                <div class="card-header">
+                    <h2>⚙️ إعدادات التحويل</h2>
+                </div>
+                <div class="card-body">
+                    <div class="form-group">
+                        <label for="outputFormat">صيغة الصوت المطلوبة:</label>
+                        <div class="format-grid">
+                            <button class="format-btn" data-format="mp3">
+                                <span class="format-icon">🎵</span>
+                                <span class="format-name">MP3</span>
+                                <span class="format-desc">الأكثر شيوعاً</span>
+                            </button>
+                            <button class="format-btn" data-format="wav">
+                                <span class="format-icon">🎙️</span>
+                                <span class="format-name">WAV</span>
+                                <span class="format-desc">جودة عالية</span>
+                            </button>
+                            <button class="format-btn" data-format="aac">
+                                <span class="format-icon">📻</span>
+                                <span class="format-name">AAC</span>
+                                <span class="format-desc">Apple</span>
+                            </button>
+                            <button class="format-btn" data-format="ogg">
+                                <span class="format-icon">🔊</span>
+                                <span class="format-name">OGG</span>
+                                <span class="format-desc">مفتوح المصدر</span>
+                            </button>
+                            <button class="format-btn" data-format="flac">
+                                <span class="format-icon">💎</span>
+                                <span class="format-name">FLAC</span>
+                                <span class="format-desc">بدون فقدان</span>
+                            </button>
+                            <button class="format-btn" data-format="m4a">
+                                <span class="format-icon">🎼</span>
+                                <span class="format-name">M4A</span>
+                                <span class="format-desc">iTunes</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="quality">جودة الصوت:</label>
+                        <select id="quality" class="quality-select">
+                            <option value="low">منخفضة - 96 kbps (حجم أصغر)</option>
+                            <option value="medium" selected>متوسطة - 128 kbps (موصى بها)</option>
+                            <option value="high">عالية - 192 kbps (جودة ممتازة)</option>
+                            <option value="best">الأفضل - 320 kbps (أعلى جودة)</option>
+                        </select>
+                    </div>
+                    
+                    <button class="btn btn-success btn-split" id="convertBtn" disabled>
+                        <span class="btn-icon" id="convertBtnIcon">🔄</span>
+                        <span id="convertBtnText">ابدأ التحويل</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Progress Section -->
+            <!-- Merge Audio Section -->
+            <div class="card upload-card" id="mergePanel" style="display: none;">
+                <div class="card-header">
+                    <h2>🔗 دمج ملفات صوتية</h2>
+                </div>
+                <div class="card-body">
+                    <div class="upload-area" id="mergeUploadArea">
+                        <div class="upload-icon">🎶</div>
+                        <p class="upload-text">اسحب وأفلت الملفات الصوتية هنا</p>
+                        <p class="upload-subtext">ملفان على الأقل</p>
+                        <label for="mergeFileInput" class="btn btn-primary"
+                               onclick="event.stopPropagation()">اختر الملفات</label>
+                        <input type="file" id="mergeFileInput" accept="audio/*" multiple hidden>
+                        <p class="upload-info">الصيغ المدعومة: MP3, WAV, AAC, OGG, FLAC, M4A</p>
+                    </div>
+
+                    <p class="merge-hint" id="mergeHint" style="display: none;">
+                        الملفات تُدمج بالترتيب المعروض. استخدم الأسهم أو اسحب الملف لتغيير ترتيبه.
+                    </p>
+
+                    <ul class="merge-list" id="mergeList"></ul>
+
+                    <div class="merge-empty" id="mergeEmpty">
+                        لم تختر أي ملف بعد.
+                    </div>
+
+                    <div class="form-group">
+                        <label for="mergeFormat">صيغة الملف الناتج</label>
+                        <select id="mergeFormat" class="quality-select">
+                            <option value="mp3">MP3</option>
+                            <option value="wav">WAV</option>
+                            <option value="aac">AAC</option>
+                            <option value="ogg">OGG</option>
+                            <option value="flac">FLAC</option>
+                            <option value="m4a">M4A</option>
+                        </select>
+                    </div>
+
+                    <button class="btn btn-success btn-split" id="mergeBtn" disabled>
+                        <span class="btn-icon">🔗</span>
+                        <span id="mergeBtnText">ادمج الملفات</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="card progress-card" id="progressCard" style="display: none;">
+                <div class="card-header">
+                    <h2>⚙️ جاري المعالجة...</h2>
+                </div>
+                <div class="card-body">
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="progressFill"></div>
+                    </div>
+                    <p class="progress-text" id="progressText">0%</p>
+                    <p class="progress-status" id="progressStatus">جاري التحليل...</p>
+                </div>
+            </div>
+
+            <!-- Results Section -->
+            <div class="card results-card" id="resultsCard" style="display: none;">
+                <div class="card-header">
+                    <h2 id="resultsTitle">✅ اكتمل التحويل!</h2>
+                </div>
+                <div class="card-body">
+                    <div class="result-single" id="resultSingle">
+                        <!-- Result will be added here dynamically -->
+                    </div>
+                    <div class="results-actions">
+                        <button class="btn btn-primary" id="downloadBtn">
+                            <span class="btn-icon">📥</span>
+                            تحميل الملف الصوتي
+                        </button>
+                        <button class="btn btn-secondary" id="resetBtn">
+                            <span class="btn-icon">🔄</span>
+                            ملف جديد
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Ad Slot 3: Bottom (Before Footer) -->
+        <div class="ad-container ad-bottom">
+            <!-- Google AdSense Code Here -->
+                <ins class="adsbygoogle"
+                    style="display:block"
+                    data-ad-client="ca-pub-5538584874036951"
+                    data-ad-slot="1234567890"
+                    data-ad-format="auto"
+                    data-full-width-responsive="true"></ins>
+                <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>تم التطوير بواسطة WhalesEC2021@hotmail.com 💻 | SplitMyVideo © 2025</p>
+            <div class="footer-links">
+                <a href="/privacy">سياسة الخصوصية</a>
+                <span>|</span>
+                <a href="/terms">شروط الاستخدام</a>
+                <span>|</span>
+                <a href="/about">من نحن</a>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Loading Overlay -->
+    <div class="loading-overlay" id="loadingOverlay" style="display: none;">
+        <div class="spinner"></div>
+        <p>جاري الرفع...</p>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/ads-manager.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/audio.js') }}"></script>
+</body>
+</html>

@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>دليلك الشامل: كيف تقسم الفيديو لـ TikTok وتحقق ملايين المشاهدات 2024</title>
+    <meta name="description" content="استراتيجيات محترفة لتقسيم الفيديوهات الطويلة وتحويلها إلى محتوى TikTok فيروسي. أسرار الخوارزمية ونصائح لزيادة المشاهدات والمتابعين">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="icon" type="image/svg+xml" href="{{ url_for('static', filename='favicon.svg') }}">
+    <style>
+        body {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        
+        .article-header {
+            text-align: center;
+            padding: 60px 20px 30px;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+        }
+        
+        .article-header h1 {
+            color: white;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            line-height: 1.3;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+        
+        .article-meta {
+            color: white;
+            font-size: 1.1em;
+            margin-bottom: 20px;
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .back-btn {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            padding: 10px 25px;
+            border-radius: 20px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 15px;
+            transition: all 0.3s;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+        }
+        
+        .back-btn:hover {
+            background: rgba(255, 255, 255, 0.3);
+            transform: translateY(-2px);
+        }
+        
+        .article-content {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 50px;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+        }
+        
+        .article-content h2 {
+            color: #667eea;
+            font-size: 2em;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #667eea;
+        }
+        
+        .article-content h3 {
+            color: #764ba2;
+            font-size: 1.5em;
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
+        
+        .article-content p {
+            font-size: 1.1em;
+            line-height: 2;
+            color: #333;
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+        
+        .article-content ul,
+        .article-content ol {
+            margin: 20px 0;
+            padding-right: 30px;
+        }
+        
+        .article-content li {
+            font-size: 1.05em;
+            line-height: 1.9;
+            margin-bottom: 15px;
+            color: #444;
+        }
+        
+        .article-content strong {
+            color: #667eea;
+            font-weight: 600;
+        }
+        
+        .highlight-box {
+            background: linear-gradient(135deg, #667eea15 0%, #764ba215 100%);
+            border-left: 4px solid #667eea;
+            padding: 25px;
+            margin: 30px 0;
+            border-radius: 10px;
+        }
+        
+        .highlight-box h4 {
+            color: #667eea;
+            margin-bottom: 15px;
+            font-size: 1.3em;
+        }
+        
+        .pro-tip {
+            background: #fffbea;
+            border-left: 4px solid #ffc107;
+            padding: 20px;
+            margin: 25px 0;
+            border-radius: 8px;
+        }
+        
+        .pro-tip strong {
+            color: #f57c00;
+        }
+        
+        .warning-box {
+            background: #ffebee;
+            border-left: 4px solid #f44336;
+            padding: 20px;
+            margin: 25px 0;
+            border-radius: 8px;
+        }
+        
+        .warning-box strong {
+            color: #c62828;
+        }
+        
+        .cta-box {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px;
+            border-radius: 15px;
+            text-align: center;
+            margin: 40px 0;
+        }
+        
+        .cta-box h3 {
+            color: white;
+            margin-bottom: 20px;
+        }
+        
+        .cta-btn {
+            display: inline-block;
+            background: white;
+            color: #667eea;
+            padding: 15px 40px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.2em;
+            transition: all 0.3s;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+        }
+        
+        .cta-btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+        }
+        
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+        
+        .stat-card {
+            background: linear-gradient(135deg, #667eea15 0%, #764ba215 100%);
+            padding: 25px;
+            border-radius: 15px;
+            text-align: center;
+        }
+        
+        .stat-card h4 {
+            color: #667eea;
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+        
+        @media only screen and (max-width: 768px) {
+            .article-header h1 {
+                font-size: 1.8em;
+            }
+            
+            .article-content {
+                padding: 30px 20px;
+                margin: 20px 10px;
+            }
+            
+            .article-content h2 {
+                font-size: 1.6em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="article-header">
+        <h1>🎵 دليلك الشامل: كيف تقسم الفيديو لـ TikTok وتحقق ملايين المشاهدات</h1>
+        <div class="article-meta">
+            <span>📅 ديسمبر 2024</span>
+            <span>⏱️ 9 دقائق قراءة</span>
+            <span>🔥 جديد</span>
+        </div>
+        <a href="/blog" class="back-btn">← العودة للمدونة</a>
+    </div>
+
+    <div class="article-content">
+        <h2>📌 لماذا TikTok مختلف عن أي منصة أخرى؟</h2>
+        <p>
+            TikTok ليس مجرد منصة لمشاركة الفيديوهات - إنه آلة صناعة النجوم! الخوارزمية الفريدة لـ TikTok تعطي فرصة 
+            متساوية للجميع، سواء كان لديك 100 متابع أو 10 ملايين. الفيديو الجيد يمكن أن يحصل على ملايين المشاهدات 
+            في ساعات، حتى لو كنت مبتدئاً تماماً. لكن لتحقيق ذلك، تحتاج لفهم كيف تقسم وتحسن محتواك لهذه المنصة الفريدة.
+        </p>
+
+        <div class="stats-grid">
+            <div class="stat-card">
+                <h4>1.5 مليار</h4>
+                <p>مستخدم نشط شهرياً</p>
+            </div>
+            <div class="stat-card">
+                <h4>52 دقيقة</h4>
+                <p>متوسط الاستخدام اليومي</p>
+            </div>
+            <div class="stat-card">
+                <h4>15-60 ثانية</h4>
+                <p>المدة المثالية للفيديو</p>
+            </div>
+            <div class="stat-card">
+                <h4>68%</h4>
+                <p>من المستخدمين تحت 30 سنة</p>
+            </div>
+        </div>
+
+        <h2>⚡ فهم خوارزمية TikTok: المفتاح للنجاح</h2>
+        
+        <h3>كيف تعمل خوارزمية TikTok؟</h3>
+        <p>
+            خوارزمية TikTok تعتمد على "صفحة For You Page (FYP)" التي تعرض محتوى مخصص لكل مستخدم. 
+            الخوارزمية تحلل:
+        </p>
+        
+        <ul>
+            <li><strong>معدل الإكمال (Completion Rate):</strong> هل المشاهد شاهد الفيديو حتى النهاية؟ (أهم مقياس!)</li>
+            <li><strong>إعادة المشاهدة (Rewatches):</strong> هل شاهد الفيديو أكثر من مرة؟</li>
+            <li><strong>التفاعلات (Engagement):</strong> الإعجابات، التعليقات، المشاركات</li>
+            <li><strong>النقر على الملف الشخصي:</strong> هل المشاهد اهتم بك كفاية ليزور ملفك؟</li>
+            <li><strong>النقر على الصوت:</strong> هل استخدم نفس الصوت الذي استخدمته؟</li>
+            <li><strong>الوقت المستغرق:</strong> كم ثانية قضاها في مشاهدة فيديوك؟</li>
+        </ul>
+
+        <div class="pro-tip">
+            <p><strong>💡 سر الخوارزمية:</strong> TikTok يختبر فيديوك أولاً مع 200-300 مشاهد. إذا كانت النتائج جيدة 
+            (معدل إكمال 70%+، تفاعل عالٍ)، يدفعه لـ 2000-3000 مشاهد. إذا نجح مجدداً، يدفعه لمئات الآلاف! 
+            لذلك، الثواني الأولى والأخيرة حاسمة جداً.</p>
+        </div>
+
+        <h2>🎯 حدود مدة الفيديو على TikTok</h2>
+        
+        <div class="highlight-box">
+            <h4>⏱️ المدد المسموحة:</h4>
+            <ul>
+                <li><strong>الحد الأقصى:</strong> 10 دقائق (للحسابات المفعّلة)</li>
+                <li><strong>المدة المثالية للفيرالية:</strong> 15-30 ثانية</li>
+                <li><strong>المحتوى التعليمي:</strong> 60-90 ثانية</li>
+                <li><strong>القصص والسرد:</strong> 2-3 دقائق</li>
+            </ul>
+        </div>
+
+        <div class="warning-box">
+            <p><strong>⚠️ تحذير مهم:</strong> رغم أن TikTok يسمح بفيديوهات حتى 10 دقائق، إلا أن الدراسات أثبتت 
+            أن الفيديوهات القصيرة (15-60 ثانية) تحصل على وصول أكبر بـ 3-5 مرات! الخوارزمية تفضل المحتوى السريع 
+            الذي يحافظ على انتباه المشاهد.</p>
+        </div>
+
+        <h2>🚀 استراتيجيات تقسيم الفيديو لـ TikTok</h2>
+
+        <h3>الاستراتيجية 1: مقاطع قصيرة مستقلة (الأفضل للفيرالية)</h3>
+        <p>
+            <strong>متى تستخدمها:</strong> عندما يكون لديك محتوى تعليمي أو ترفيهي طويل
+        </p>
+        <p>
+            <strong>كيف تطبقها:</strong>
+        </p>
+        <ol>
+            <li>حلل الفيديو الطويل وحدد 5-10 لحظات قوية ومستقلة</li>
+            <li>اقتطع كل لحظة (15-30 ثانية)</li>
+            <li>كل فيديو يجب أن يكون له hook قوي في أول 3 ثواني</li>
+            <li>أضف نهاية تشجع على المتابعة ("تابع للمزيد!")</li>
+            <li>انشر فيديو واحد يومياً (لا تنشر الكل دفعة واحدة!)</li>
+        </ol>
+
+        <div class="pro-tip">
+            <p><strong>💡 نصيحة ذهبية:</strong> استخدم نفس الصوت/الموسيقى لجميع الأجزاء. هذا يخلق "هوية" لسلسلتك 
+            ويسهل على المتابعين التعرف على محتواك.</p>
+        </div>
+
+        <h3>الاستراتيجية 2: السلاسل المترابطة (Series)</h3>
+        <p>
+            <strong>متى تستخدمها:</strong> للقصص، الشروحات الطويلة، أو المحتوى السردي
+        </p>
+        <p>
+            <strong>كيف تطبقها:</strong>
+        </p>
+        <ol>
+            <li>قسّم الفيديو إلى أجزاء مترابطة (Part 1, 2, 3...)</li>
+            <li>كل جزء 45-90 ثانية</li>
+            <li>أنهِ كل جزء بـ cliffhanger (تشويق) يجعل المشاهد يريد الجزء التالي</li>
+            <li>أضف "Part X of Y" في بداية كل فيديو</li>
+            <li>انشر الأجزاء بفواصل 2-3 ساعات (لا تنشر كل شيء دفعة واحدة)</li>
+        </ol>
+
+        <p><strong>مثال على Cliffhanger جيد:</strong></p>
+        <p style="background: #f5f5f5; padding: 15px; border-radius: 8px; font-style: italic;">
+            "وعندما فتحت الباب، لن تصدق ما وجدته... شاهد الجزء التالي لتعرف!"
+        </p>
+
+        <h3>الاستراتيجية 3: Hook + محتوى + CTA (الصيغة الذهبية)</h3>
+        <p>
+            هذه ليست استراتيجية تقسيم، لكنها الصيغة التي يجب أن يتبعها كل فيديو بعد التقسيم:
+        </p>
+
+        <ul>
+            <li><strong>Hook (3 ثواني الأولى):</strong> "هل تعلم أن 99% من الناس يفعلون هذا خطأ؟"</li>
+            <li><strong>المحتوى (12-25 ثانية):</strong> قدّم القيمة/الترفيه بسرعة ووضوح</li>
+            <li><strong>CTA (آخر 2-3 ثواني):</strong> "تابع للمزيد!" أو "شارك مع صديق!" أو "انتظر الجزء 2!"</li>
+        </ul>
+
+        <h2>🛠️ دليل خطوة بخطوة: تقسيم فيديو لـ TikTok باستخدام SplitMyVideo</h2>
+
+        <h3>الخطوة 1: حضّر المحتوى</h3>
+        <p>قبل التقسيم:</p>
+        <ul>
+            <li>شاهد الفيديو كاملاً وحدد أقوى اللحظات</li>
+            <li>سجّل أوقات البداية والنهاية لكل مقطع تريد استخراجه</li>
+            <li>فكر في hooks محتملة لكل مقطع</li>
+            <li>حدد استراتيجيتك: مقاطع مستقلة أم سلسلة؟</li>
+        </ul>
+
+        <h3>الخطوة 2: استخدم SplitMyVideo</h3>
+        <ol>
+            <li><strong>ارفع الفيديو:</strong> اذهب إلى <a href="/" style="color: #667eea;">SplitMyVideo.com</a></li>
+            <li><strong>اختر طريقة التقسيم:</strong>
+                <ul>
+                    <li><strong>استخراج مقاطع:</strong> الأفضل لـ TikTok! اقتطع لحظات محددة</li>
+                    <li><strong>تقسيم بالثواني:</strong> إذا كنت تريد كل مقطع 30 ثانية بالضبط</li>
+                </ul>
+            </li>
+            <li><strong>لا تستخدم التداخل:</strong> TikTok يفضل مقاطع نظيفة بدون تكرار</li>
+            <li><strong>اختر جودة عالية:</strong> TikTok يعرض بجودة عالية، لا تضحي بالجودة!</li>
+            <li><strong>حمّل وصدّر:</strong> حمّل جميع المقاطع</li>
+        </ol>
+
+        <div class="cta-box">
+            <h3>✂️ جاهز لإنشاء محتوى TikTok فيروسي؟</h3>
+            <p>قسّم فيديوهاتك بطريقة احترافية واحصل على ملايين المشاهدات!</p>
+            <a href="/" class="cta-btn">ابدأ التقسيم الآن →</a>
+        </div>
+
+        <h3>الخطوة 3: التحرير النهائي (مهم!)</h3>
+        <p>
+            بعد التقسيم، استخدم تطبيق TikTok نفسه أو CapCut (من نفس الشركة) لإضافة:
+        </p>
+        <ul>
+            <li><strong>نصوص (Captions):</strong> 56% من المشاهدين يشاهدون بدون صوت!</li>
+            <li><strong>موسيقى شائعة:</strong> استخدم الأصوات الترندينج لزيادة الوصول</li>
+            <li><strong>تأثيرات بصرية:</strong> انتقالات سريعة، زوم، فلاتر</li>
+            <li><strong>هاشتاجات:</strong> 3-5 هاشتاجات ذات صلة</li>
+        </ul>
+
+        <h2>✨ أسرار محترفي TikTok لزيادة المشاهدات</h2>
+
+        <h3>1. اللحظات الثلاثة الأولى = كل شيء</h3>
+        <p>
+            استراتيجيات hooks قوية:
+        </p>
+        <ul>
+            <li><strong>السؤال المثير:</strong> "هل تعلم أن معظم الناس يغسلون أسنانهم بطريقة خاطئة؟"</li>
+            <li><strong>الادعاء الصادم:</strong> "هذه الحيلة وفرت لي 10 ساعات أسبوعياً!"</li>
+            <li><strong>الفضول:</strong> "انتظر حتى ترى ما حدث بعد ذلك..."</li>
+            <li><strong>الإحصائية المفاجئة:</strong> "99% من المبرمجين لا يعرفون هذا!"</li>
+        </ul>
+
+        <h3>2. استخدم "Loop Technique"</h3>
+        <p>
+            اجعل نهاية الفيديو تتصل بالبداية بسلاسة. هذا يشجع على إعادة المشاهدة (وهو ما تحبه الخوارزمية!)
+        </p>
+        <p><strong>مثال:</strong></p>
+        <p style="background: #f5f5f5; padding: 15px; border-radius: 8px;">
+            <strong>البداية:</strong> "لنبدأ من الخطوة الأولى..."<br>
+            <strong>النهاية:</strong> "...والآن نعود للخطوة الأولى لنربط كل شيء!"
+        </p>
+
+        <h3>3. انشر في الأوقات المثلى</h3>
+        <p>
+            أفضل أوقات للنشر (بتوقيت السعودية/الخليج):
+        </p>
+        <ul>
+            <li><strong>الإثنين-الخميس:</strong> 7-9 صباحاً (قبل العمل)، 12-2 ظهراً (استراحة الغداء)، 7-10 مساءً (بعد العمل)</li>
+            <li><strong>الجمعة:</strong> 12-3 ظهراً، 9-11 مساءً</li>
+            <li><strong>السبت-الأحد:</strong> 11 صباحاً - 1 ظهراً، 8-10 مساءً</li>
+        </ul>
+
+        <h3>4. تفاعل مع جمهورك</h3>
+        <p>
+            الخوارزمية تلاحظ عندما ترد على التعليقات! رد على أول 50 تعليق خلال أول ساعة من النشر. هذا يزيد 
+            التفاعل ويعطي إشارة للخوارزمية أن الفيديو "ساخن".
+        </p>
+
+        <h3>5. استخدم "Duet" و "Stitch"</h3>
+        <p>
+            عند نشر السلسلة، شجع متابعيك على عمل Duet أو Stitch. هذا ينشر محتواك لجمهور أوسع.
+        </p>
+
+        <h2>📊 دراسة حالة: من صفر إلى مليون مشاهدة</h2>
+        
+        <div class="highlight-box">
+            <h4>🔥 قصة نجاح حقيقية:</h4>
+            <p>
+                <strong>الخلفية:</strong> صانع محتوى لديه فيديو YouTube تعليمي 20 دقيقة عن "تعلم البرمجة". 
+                الفيديو حصل على 8,000 مشاهدة على YouTube خلال شهر.
+            </p>
+            <p><strong>الاستراتيجية:</strong></p>
+            <ul>
+                <li>قسّم الفيديو إلى 15 مقطع (كل واحد 45-60 ثانية)</li>
+                <li>كل مقطع يشرح "حيلة برمجية" واحدة</li>
+                <li>استخدم hook قوي: "معظم المبرمجين لا يعرفون هذا!"</li>
+                <li>أضاف نصوص كبيرة وواضحة على الشاشة</li>
+                <li>نشر فيديو واحد يومياً</li>
+                <li>رد على كل تعليق خلال أول ساعة</li>
+            </ul>
+            <p><strong>النتائج بعد 15 يوم:</strong></p>
+            <ul>
+                <li>✅ <strong>12 مليون مشاهدة</strong> إجمالية (1,500x أكثر من YouTube!)</li>
+                <li>✅ <strong>450,000 متابع جديد</strong></li>
+                <li>✅ 3 فيديوهات وصلت FYP وحصلت على +1 مليون مشاهدة لكل واحد</li>
+                <li>✅ معدل تفاعل 18% (استثنائي لـ TikTok)</li>
+                <li>✅ عروض رعاية بقيمة $15,000</li>
+            </ul>
+            <p><strong>السر:</strong> المقاطع القصيرة كانت سهلة الفهم ومستقلة. كل فيديو قدم قيمة فورية، 
+            والـ hooks كانت قوية جداً.</p>
+        </div>
+
+        <h2>⚠️ أخطاء قاتلة يجب تجنبها على TikTok</h2>
+
+        <h3>1. نشر كل الأجزاء دفعة واحدة</h3>
+        <p>
+            <strong>لماذا هذا خطأ:</strong> TikTok يعتبرك "spam" إذا نشرت أكثر من 3 فيديوهات في ساعة واحدة. 
+            هذا يقلل من وصولك بشكل كبير.
+        </p>
+        <p>
+            <strong>الحل:</strong> انشر فيديو واحد كل 4-6 ساعات، أو فيديو واحد يومياً.
+        </p>
+
+        <h3>2. استخدام محتوى أفقي (Landscape)</h3>
+        <p>
+            <strong>لماذا هذا خطأ:</strong> TikTok مصمم للفيديوهات العمودية (9:16). المحتوى الأفقي يبدو صغيراً 
+            وغير احترافي.
+        </p>
+        <p>
+            <strong>الحل:</strong> دائماً استخدم نسبة 9:16 (1080x1920 بكسل). إذا كان فيديوك أفقي، اقتصه أو أضف 
+            blur في الخلفية.
+        </p>
+
+        <h3>3. إهمال أول 3 ثواني</h3>
+        <p>
+            إذا لم تجذب الانتباه في 3 ثواني، خسرت 70% من المشاهدين المحتملين. لا تبدأ بمقدمات طويلة!
+        </p>
+
+        <h3>4. عدم استخدام الأصوات الترندينج</h3>
+        <p>
+            TikTok يدفع الفيديوهات التي تستخدم أصوات شائعة. ابحث دائماً عن أحدث الترندات واستخدمها.
+        </p>
+
+        <h2>🎓 نصائح إضافية للنجاح المستدام</h2>
+
+        <h3>1. كن متسقاً (Consistency is Key)</h3>
+        <p>
+            انشر يومياً لمدة شهر على الأقل. الخوارزمية تكافئ المبدعين المتسقين.
+        </p>
+
+        <h3>2. حلل الأداء</h3>
+        <p>
+            استخدم TikTok Analytics (متاح في TikTok Pro، مجاناً) وراقب:
+        </p>
+        <ul>
+            <li>متوسط مدة المشاهدة (Watch Time)</li>
+            <li>مصادر الترافيك (FYP vs Followers)</li>
+            <li>أكثر الفيديوهات نجاحاً</li>
+            <li>أفضل أوقات النشر لجمهورك</li>
+        </ul>
+
+        <h3>3. جرّب وتعلم</h3>
+        <p>
+            لا توجد صيغة واحدة تعمل للجميع. جرّب hooks مختلفة، أطوال مختلفة، محتوى مختلف. ما يعمل اليوم 
+            قد لا يعمل الشهر القادم - TikTok دائم التغير!
+        </p>
+
+        <h2>🎯 الخلاصة</h2>
+        <p>
+            TikTok هو أقوى منصة لصناع المحتوى الذين يريدون وصول سريع وضخم. بتقسيم فيديوهاتك الطويلة بطريقة 
+            ذكية وتطبيق الاستراتيجيات في هذا الدليل، يمكنك تحويل محتوى عادي إلى فيديوهات فيروسية تحصد ملايين المشاهدات.
+        </p>
+
+        <p><strong>الخطوات الأساسية:</strong></p>
+        <ol>
+            <li>افهم خوارزمية TikTok (معدل الإكمال = الملك)</li>
+            <li>قسّم فيديوهاتك إلى مقاطع 15-60 ثانية</li>
+            <li>استخدم hooks قوية في أول 3 ثواني</li>
+            <li>طبّق Loop Technique لزيادة إعادة المشاهدة</li>
+            <li>استخدم نصوص واضحة على الشاشة</li>
+            <li>انشر في الأوقات المثلى</li>
+            <li>تفاعل مع جمهورك خلال أول ساعة</li>
+            <li>كن متسقاً وحلل أداءك</li>
+        </ol>
+
+        <div class="cta-box">
+            <h3>🚀 حان وقت الشهرة!</h3>
+            <p>ابدأ الآن وحوّل فيديوهاتك إلى محتوى TikTok فيروسي يحقق ملايين المشاهدات</p>
+            <a href="/" class="cta-btn">قسّم فيديوك مجاناً →</a>
+        </div>
+
+        <hr style="margin: 40px 0; border: none; border-top: 2px solid #eee;">
+
+        <h3>📚 مقالات ذات صلة:</h3>
+        <ul style="list-style: none; padding: 0;">
+            <li style="margin-bottom: 15px;">
+                <a href="/blog/split-youtube-for-instagram" style="color: #667eea; font-size: 1.1em; text-decoration: none;">
+                    📸 كيف تقسم الفيديو لـ Instagram →
+                </a>
+            </li>
+            <li style="margin-bottom: 15px;">
+                <a href="/blog/split-video-for-snapchat" style="color: #667eea; font-size: 1.1em; text-decoration: none;">
+                    👻 دليل تقسيم الفيديو لـ Snapchat →
+                </a>
+            </li>
+            <li style="margin-bottom: 15px;">
+                <a href="/blog/video-sizes-all-platforms" style="color: #667eea; font-size: 1.1em; text-decoration: none;">
+                    📱 أفضل أحجام الفيديو لكل منصة →
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <footer style="background: rgba(0,0,0,0.3); color: white; padding: 30px; text-align: center;">
+        <p>&copy; 2024 SplitMyVideo. جميع الحقوق محفوظة.</p>
+        <p style="margin-top: 10px;">
+            <a href="/" style="color: white; margin: 0 10px;">الصفحة الرئيسية</a>
+            <a href="/blog" style="color: white; margin: 0 10px;">المدونة</a>
+            <a href="/how-to-use" style="color: white; margin: 0 10px;">كيفية الاستخدام</a>
+            <a href="mailto:WhalesEC2021@hotmail.com" style="color: white; margin: 0 10px;">اتصل بنا</a>
+        </p>
+    </footer>
+</body>
+</html>

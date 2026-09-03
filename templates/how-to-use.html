@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>كيفية استخدام SplitMyVideo - دليل شامل</title>
+    <meta name="description" content="تعلم كيفية تقسيم الفيديوهات بسهولة باستخدام SplitMyVideo - دليل خطوة بخطوة مع صور توضيحية">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <style>
+        body {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.8;
+            min-height: 100vh;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .header-section {
+            text-align: center;
+            padding: 60px 20px 40px;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            margin-bottom: 40px;
+        }
+        
+        .header-section h1 {
+            font-size: 3em;
+            margin-bottom: 15px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+        
+        .header-section p {
+            font-size: 1.3em;
+            opacity: 0.9;
+        }
+        
+        .back-home {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            padding: 12px 30px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 20px;
+            transition: all 0.3s;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+        }
+        
+        .back-home:hover {
+            background: rgba(255, 255, 255, 0.3);
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+        
+        main {
+            max-width: 900px;
+            margin: 0 auto 60px;
+            padding: 40px;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+            color: #333;
+        }
+        
+        article h2 {
+            color: #667eea;
+            font-size: 2em;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #667eea;
+        }
+        
+        article h3 {
+            color: #764ba2;
+            font-size: 1.5em;
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
+        
+        article p {
+            font-size: 1.1em;
+            line-height: 2;
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+        
+        article ul, article ol {
+            margin: 20px 0;
+            padding-right: 30px;
+        }
+        
+        article li {
+            margin-bottom: 15px;
+            line-height: 1.8;
+            font-size: 1.05em;
+        }
+        
+        article li strong {
+            color: #667eea;
+        }
+        
+        .contact-section {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 15px;
+            margin-top: 40px;
+            text-align: center;
+        }
+        
+        .contact-section h2 {
+            color: white;
+            border-bottom: 2px solid white;
+            padding-bottom: 15px;
+        }
+        
+        .contact-section a {
+            color: white;
+            font-weight: bold;
+            text-decoration: none;
+            padding: 10px 20px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 10px;
+            display: inline-block;
+            margin-top: 10px;
+            transition: all 0.3s;
+        }
+        
+        .contact-section a:hover {
+            background: rgba(255, 255, 255, 0.3);
+            transform: scale(1.05);
+        }
+        
+        footer {
+            text-align: center;
+            padding: 30px;
+            color: white;
+            background: rgba(0, 0, 0, 0.2);
+        }
+    </style>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="{{ url_for('static', filename='favicon.svg') }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ url_for('static', filename='favicon-32x32.png') }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ url_for('static', filename='favicon-16x16.png') }}">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ url_for('static', filename='favicon-192x192.png') }}">
+    
+
+</head>
+<body>
+    <div class="header-section">
+        <h1>🎬 كيفية استخدام SplitMyVideo</h1>
+        <p>دليل شامل لتقسيم الفيديوهات بسهولة</p>
+        <a href="/" class="back-home">🏠 العودة للصفحة الرئيسية</a>
+    </div>
+
+    <main>
+        <article>
+            <h2>📌 المقدمة</h2>
+            <p>
+                SplitMyVideo هي أداة مجانية وسهلة الاستخدام لتقسيم مقاطع الفيديو إلى أجزاء متعددة. 
+                سواء كنت تريد تقسيم فيديو طويل للمشاركة على وسائل التواصل الاجتماعي، أو إنشاء مقاطع قصيرة 
+                من فيديو واحد، فإن أداتنا توفر لك حلاً سريعاً وفعالاً.
+            </p>
+
+            <h2>✨ لماذا تحتاج لتقسيم الفيديو؟</h2>
+            <ul>
+                <li><strong>وسائل التواصل الاجتماعي:</strong> Instagram وTwitter لديهما حد أقصى لمدة الفيديو</li>
+                <li><strong>سهولة المشاركة:</strong> ملفات أصغر أسهل في الإرسال والتحميل</li>
+                <li><strong>التنظيم:</strong> تقسيم الفيديوهات الطويلة إلى فصول أو أقسام</li>
+                <li><strong>التحرير:</strong> العمل على أجزاء محددة من الفيديو</li>
+            </ul>
+
+            <h2>🚀 دليل خطوة بخطوة</h2>
+            
+            <h3>الخطوة 1: رفع الفيديو</h3>
+            <p>
+                انقر على زر "اختر ملف" أو اسحب الفيديو مباشرة إلى المنطقة المخصصة. 
+                ندعم جميع صيغ الفيديو الشائعة مثل MP4، AVI، MOV، MKV، وغيرها.
+            </p>
+
+            <h3>الخطوة 2: اختيار طريقة التقسيم</h3>
+            <p>لديك ثلاث خيارات:</p>
+            <ul>
+                <li><strong>تقسيم بعدد الأجزاء:</strong> حدد عدد الأجزاء المطلوبة (من 2 إلى 20 جزء)</li>
+                <li><strong>تقسيم بالثواني:</strong> حدد مدة كل جزء بالثواني</li>
+                <li><strong>استخراج مقاطع:</strong> حدد أوقات البداية والنهاية لكل مقطع تريد استخراجه</li>
+            </ul>
+
+            <h3>الخطوة 3: إعدادات إضافية (اختيارية)</h3>
+            <ul>
+                <li><strong>التداخل:</strong> أضف ثواني تداخل بين الأجزاء لضمان عدم فقدان أي محتوى</li>
+                <li><strong>الجودة:</strong> اختر بين "سريع" للمعالجة الأسرع أو "عالي الجودة" للنتائج الأفضل</li>
+            </ul>
+
+            <h3>الخطوة 4: بدء التقسيم</h3>
+            <p>
+                انقر على "ابدأ التقسيم" وانتظر حتى تكتمل المعالجة. 
+                ستظهر لك شريط تقدم يوضح حالة المعالجة.
+            </p>
+
+            <h3>الخطوة 5: تحميل النتائج</h3>
+            <p>بعد انتهاء المعالجة، يمكنك:</p>
+            <ul>
+                <li>تحميل كل جزء على حدة</li>
+                <li>تحميل جميع الأجزاء في ملف مضغوط واحد</li>
+                <li>مشاركة الأجزاء مباشرة</li>
+            </ul>
+
+            <h2>💡 نصائح وحيل</h2>
+            <ol>
+                <li><strong>حجم الملف:</strong> للحصول على أفضل أداء، استخدم ملفات أقل من 500 ميجابايت</li>
+                <li><strong>الجودة:</strong> استخدم إعداد "سريع" للحصول على توازن مثالي بين السرعة والجودة</li>
+                <li><strong>التداخل:</strong> أضف 1-2 ثانية تداخل إذا كان الفيديو يحتوي على حركة سريعة</li>
+                <li><strong>الصيغة:</strong> MP4 هي الصيغة الأكثر توافقاً مع جميع الأجهزة</li>
+            </ol>
+
+            <h2>❓ الأسئلة الشائعة</h2>
+            
+            <h3>ما هي أقصى مدة للفيديو؟</h3>
+            <p>
+                يمكنك تقسيم فيديوهات بأي مدة، لكن الفيديوهات الكبيرة جداً (أكثر من ساعة) 
+                قد تستغرق وقتاً أطول في المعالجة.
+            </p>
+
+            <h3>هل الخدمة مجانية؟</h3>
+            <p>نعم، SplitMyVideo مجانية تماماً للاستخدام الشخصي.</p>
+
+            <h3>هل تحتفظون بنسخة من الفيديو؟</h3>
+            <p>
+                لا، جميع الملفات تُحذف تلقائياً بعد ساعتين من المعالجة لضمان خصوصيتك.
+            </p>
+
+            <h3>ما الصيغ المدعومة؟</h3>
+            <p>
+                ندعم: MP4, AVI, MOV, MKV, FLV, WMV, WEBM، وجميع صيغ الفيديو الشائعة.
+            </p>
+
+            <h2>🎓 حالات استخدام عملية</h2>
+            
+            <h3>1. تقسيم فيديو YouTube طويل</h3>
+            <p>
+                إذا كان لديك فيديو طويل وتريد نشره على Instagram (الحد الأقصى دقيقة واحدة)، 
+                استخدم "تقسيم بالثواني" واختر 60 ثانية لكل جزء.
+            </p>
+
+            <h3>2. إنشاء معاينات للفيديو</h3>
+            <p>
+                استخدم "استخراج مقاطع" لاستخراج أفضل اللحظات من فيديو طويل.
+            </p>
+
+            <h3>3. تقسيم فيديو تعليمي</h3>
+            <p>
+                قسّم فيديو تعليمي طويل إلى دروس قصيرة باستخدام "تقسيم بعدد الأجزاء".
+            </p>
+
+            <div class="contact-section">
+                <h2>📞 هل تحتاج مساعدة؟</h2>
+                <p style="font-size: 1.1em; margin: 20px 0;">
+                    إذا واجهت أي مشاكل أو لديك استفسارات، لا تتردد في التواصل معنا:
+                </p>
+                <p>
+                    <a href="mailto:WhalesEC2021@hotmail.com">
+                        📧 WhalesEC2021@hotmail.com
+                    </a>
+                </p>
+                <p style="margin-top: 30px;">
+                    <a href="/faq">❓ الأسئلة الشائعة</a>
+                    <a href="/about" style="margin-right: 20px;">ℹ️ عن الموقع</a>
+                    <a href="/" style="margin-right: 20px;">🏠 الصفحة الرئيسية</a>
+                </p>
+            </div>
+        </article>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 SplitMyVideo. جميع الحقوق محفوظة.</p>
+        <p style="margin-top: 10px; opacity: 0.8;">
+            <a href="/privacy" style="color: white; margin: 0 15px;">سياسة الخصوصية</a>
+            <a href="/terms" style="color: white; margin: 0 15px;">شروط الاستخدام</a>
+            <a href="mailto:WhalesEC2021@hotmail.com" style="color: white; margin: 0 15px;">اتصل بنا</a>
+        </p>
+    </footer>
+</body>
+</html>
+
+
+

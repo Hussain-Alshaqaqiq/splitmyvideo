@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مدونة SplitMyVideo - نصائح احترافية لتحرير ومشاركة الفيديو</title>
+    <meta name="description" content="دليلك الشامل لتقسيم ومشاركة الفيديوهات على جميع منصات التواصل الاجتماعي: TikTok، Snapchat، Instagram، YouTube. نصائح احترافية ودروس عملية">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="icon" type="image/svg+xml" href="{{ url_for('static', filename='favicon.svg') }}">
+    <style>
+        body {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        
+        .blog-header {
+            text-align: center;
+            padding: 60px 20px 40px;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            margin-bottom: 40px;
+        }
+        
+        .blog-header h1 {
+            color: white;
+            font-size: 3em;
+            margin-bottom: 15px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+        
+        .blog-header p {
+            color: white;
+            font-size: 1.3em;
+            opacity: 0.95;
+        }
+        
+        .back-home {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            padding: 12px 30px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 20px;
+            transition: all 0.3s;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+        }
+        
+        .back-home:hover {
+            background: rgba(255, 255, 255, 0.3);
+            transform: translateY(-2px);
+        }
+        
+        .blog-container {
+            max-width: 1200px;
+            margin: 0 auto 60px;
+            padding: 20px;
+        }
+        
+        .blog-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        
+        .blog-card {
+            background: white;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            transition: all 0.3s;
+        }
+        
+        .blog-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+        }
+        
+        .blog-image {
+            width: 100%;
+            height: 220px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 5em;
+            position: relative;
+        }
+        
+        .blog-tag {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background: rgba(255, 255, 255, 0.9);
+            color: #667eea;
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-size: 0.3em;
+            font-weight: bold;
+        }
+        
+        .blog-content {
+            padding: 30px;
+        }
+        
+        .blog-meta {
+            color: #999;
+            font-size: 0.9em;
+            margin-bottom: 15px;
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+        
+        .blog-content h3 {
+            color: #667eea;
+            margin-bottom: 15px;
+            font-size: 1.5em;
+            line-height: 1.4;
+        }
+        
+        .blog-content p {
+            color: #555;
+            line-height: 1.8;
+            margin-bottom: 20px;
+        }
+        
+        .read-more {
+            display: inline-block;
+            color: white;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            font-weight: bold;
+            text-decoration: none;
+            padding: 12px 30px;
+            border-radius: 25px;
+            transition: all 0.3s;
+            box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+        }
+        
+        .read-more:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 20px rgba(102, 126, 234, 0.6);
+        }
+        
+        @media only screen and (max-width: 768px) {
+            .blog-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .blog-header h1 {
+                font-size: 2em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="blog-header">
+        <h1>📝 مدونة SplitMyVideo</h1>
+        <p>دليلك الشامل لتقسيم ومشاركة الفيديوهات بطريقة احترافية</p>
+        <a href="/" class="back-home">🏠 العودة للصفحة الرئيسية</a>
+    </div>
+
+    <div class="blog-container">
+        <div class="blog-grid">
+            <!-- مقال 1: Instagram -->
+            <div class="blog-card">
+                <div class="blog-image">
+                    📸
+                    <span class="blog-tag">Instagram</span>
+                </div>
+                <div class="blog-content">
+                    <div class="blog-meta">
+                        <span>📅 ديسمبر 2024</span>
+                        <span>⏱️ 8 دقائق قراءة</span>
+                        <span>👁️ شائع</span>
+                    </div>
+                    <h3>كيف تقسم فيديو YouTube الطويل لمشاركته على Instagram بطريقة احترافية</h3>
+                    <p>
+                        Instagram لديه حدود صارمة لمدة الفيديو: 60 ثانية للمنشورات، 90 ثانية لـ Reels، و15 ثانية للستوري. 
+                        تعلم كيف تحول فيديوهاتك الطويلة إلى محتوى مثالي لكل نوع من أنواع منشورات Instagram، مع نصائح لزيادة التفاعل والمشاهدات.
+                    </p>
+                    <a href="/blog/split-youtube-for-instagram" class="read-more">اقرأ المزيد →</a>
+                </div>
+            </div>
+
+            <!-- مقال 2: TikTok -->
+            <div class="blog-card">
+                <div class="blog-image">
+                    🎵
+                    <span class="blog-tag">TikTok</span>
+                </div>
+                <div class="blog-content">
+                    <div class="blog-meta">
+                        <span>📅 ديسمبر 2024</span>
+                        <span>⏱️ 9 دقائق قراءة</span>
+                        <span>🔥 جديد</span>
+                    </div>
+                    <h3>دليلك الشامل: كيف تقسم الفيديو لـ TikTok وتحقق ملايين المشاهدات</h3>
+                    <p>
+                        TikTok يسمح بفيديوهات حتى 10 دقائق، لكن الفيديوهات القصيرة (15-60 ثانية) تحقق أفضل أداء. 
+                        اكتشف كيف تقسم المحتوى الطويل إلى مقاطع قصيرة جذابة، متى تستخدم السلاسل (Series)، وأسرار الخوارزمية لزيادة الوصول.
+                    </p>
+                    <a href="/blog/split-video-for-tiktok" class="read-more">اقرأ المزيد →</a>
+                </div>
+            </div>
+
+            <!-- مقال 3: Snapchat -->
+            <div class="blog-card">
+                <div class="blog-image">
+                    👻
+                    <span class="blog-tag">Snapchat</span>
+                </div>
+                <div class="blog-content">
+                    <div class="blog-meta">
+                        <span>📅 ديسمبر 2024</span>
+                        <span>⏱️ 7 دقائق قراءة</span>
+                        <span>⭐ مميز</span>
+                    </div>
+                    <h3>استراتيجيات احترافية: تقسيم الفيديو لـ Snapchat Spotlight والستوري</h3>
+                    <p>
+                        Snapchat يفضل فيديوهات 60 ثانية أو أقل لـ Spotlight، و10 ثواني لكل سناب في الستوري. 
+                        تعلم كيف تقسم محتواك بطريقة تناسب طبيعة المنصة، كيف تستخدم التداخل لإنشاء سلاسل مشوقة، ونصائح لزيادة فرص الفيرالية.
+                    </p>
+                    <a href="/blog/split-video-for-snapchat" class="read-more">اقرأ المزيد →</a>
+                </div>
+            </div>
+
+            <!-- مقال 4: مقارنة المنصات -->
+            <div class="blog-card">
+                <div class="blog-image">
+                    📱
+                    <span class="blog-tag">دليل شامل</span>
+                </div>
+                <div class="blog-content">
+                    <div class="blog-meta">
+                        <span>📅 ديسمبر 2024</span>
+                        <span>⏱️ 10 دقائق قراءة</span>
+                        <span>📊 مرجع</span>
+                    </div>
+                    <h3>أفضل أحجام ومدة الفيديو لكل منصة تواصل اجتماعي (2024)</h3>
+                    <p>
+                        دليل مرجعي شامل يغطي المتطلبات الدقيقة لكل منصة: YouTube، Instagram، TikTok، Snapchat، Twitter، Facebook، LinkedIn. 
+                        جدول مقارنة تفصيلي مع الأبعاد، المدة، نسبة العرض للارتفاع، وأفضل الممارسات لكل منصة.
+                    </p>
+                    <a href="/blog/video-sizes-all-platforms" class="read-more">اقرأ المزيد →</a>
+                </div>
+            </div>
+
+            <!-- مقال 5: استراتيجيات التقسيم -->
+            <div class="blog-card">
+                <div class="blog-image">
+                    💡
+                    <span class="blog-tag">نصائح</span>
+                </div>
+                <div class="blog-content">
+                    <div class="blog-meta">
+                        <span>📅 ديسمبر 2024</span>
+                        <span>⏱️ 8 دقائق قراءة</span>
+                        <span>✨ مهم</span>
+                    </div>
+                    <h3>كيف تستفيد من تقسيم الفيديو لزيادة مشاهداتك 300%</h3>
+                    <p>
+                        تقسيم الفيديو ليس فقط لتقليل الحجم - إنه استراتيجية تسويقية قوية. 
+                        اكتشف كيف تستخدم التقسيم لإنشاء سلاسل محتوى، زيادة وقت المشاهدة، تحسين SEO، وبناء جمهور متفاعل عبر منصات متعددة.
+                    </p>
+                    <a href="/blog/video-splitting-strategies" class="read-more">اقرأ المزيد →</a>
+                </div>
+            </div>
+
+            <!-- مقال 6: أخطاء شائعة -->
+            <div class="blog-card">
+                <div class="blog-image">
+                    ⚠️
+                    <span class="blog-tag">تحذيرات</span>
+                </div>
+                <div class="blog-content">
+                    <div class="blog-meta">
+                        <span>📅 نوفمبر 2024</span>
+                        <span>⏱️ 6 دقائق قراءة</span>
+                        <span>🎯 عملي</span>
+                    </div>
+                    <h3>7 أخطاء قاتلة عند تقسيم الفيديوهات (وكيف تتجنبها)</h3>
+                    <p>
+                        تعلم من أخطاء الآخرين! نستعرض الأخطاء الأكثر شيوعاً التي تدمر جودة الفيديو وتقلل التفاعل: 
+                        التقسيم في اللحظات الخاطئة، إهمال التداخل، استخدام جودة منخفضة، وأكثر من ذلك بكثير.
+                    </p>
+                    <a href="/blog/common-video-splitting-mistakes" class="read-more">اقرأ المزيد →</a>
+                </div>
+            </div>
+
+            <!-- مقال 7: للمبتدئين -->
+            <div class="blog-card">
+                <div class="blog-image">
+                    🎓
+                    <span class="blog-tag">للمبتدئين</span>
+                </div>
+                <div class="blog-content">
+                    <div class="blog-meta">
+                        <span>📅 نوفمبر 2024</span>
+                        <span>⏱️ 12 دقيقة قراءة</span>
+                        <span>📚 تعليمي</span>
+                    </div>
+                    <h3>دليل المبتدئين الكامل: من الفيديو الخام إلى المحتوى الاحترافي</h3>
+                    <p>
+                        دليل شامل خطوة بخطوة للمبتدئين تماماً. يغطي كل شيء من تحضير الفيديو، اختيار طريقة التقسيم المناسبة، 
+                        الإعدادات المثلى، التصدير، النشر، وتتبع الأداء. مع أمثلة عملية ونصائح محترفين.
+                    </p>
+                    <a href="/blog/beginners-complete-guide" class="read-more">اقرأ المزيد →</a>
+                </div>
+            </div>
+
+            <!-- مقال 8: تحسين SEO -->
+            <div class="blog-card">
+                <div class="blog-image">
+                    🔍
+                    <span class="blog-tag">SEO</span>
+                </div>
+                <div class="blog-content">
+                    <div class="blog-meta">
+                        <span>📅 نوفمبر 2024</span>
+                        <span>⏱️ 9 دقائق قراءة</span>
+                        <span>🚀 متقدم</span>
+                    </div>
+                    <h3>كيف يساعد تقسيم الفيديو في تحسين ترتيبك في محركات البحث</h3>
+                    <p>
+                        الفيديوهات المقسمة بذكاء تحصل على ترتيب أفضل في Google وYouTube. 
+                        اكتشف العلاقة بين مدة الفيديو والـ SEO، كيف تستخدم التقسيم لزيادة وقت المشاهدة، واستراتيجيات العناوين والوصف للأجزاء.
+                    </p>
+                    <a href="/blog/video-splitting-seo-benefits" class="read-more">اقرأ المزيد →</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<footer style="background: rgba(0,0,0,0.3); color: white; padding: 30px; text-align: center; margin-top: 60px;">
+    <p style="margin-bottom: 15px;">&copy; 2024 SplitMyVideo. جميع الحقوق محفوظة.</p>
+    <p style="margin: 0;">
+        <a href="/privacy" style="color: white; margin: 0 10px; text-decoration: none;">سياسة الخصوصية</a>
+        <a href="/terms" style="color: white; margin: 0 10px; text-decoration: none;">شروط الاستخدام</a>
+        <a href="/about" style="color: white; margin: 0 10px; text-decoration: none;">من نحن</a>
+        <a href="/how-to-use" style="color: white; margin: 0 10px; text-decoration: none;">كيفية الاستخدام</a>
+        <a href="/faq" style="color: white; margin: 0 10px; text-decoration: none;">الأسئلة الشائعة</a>
+        <a href="mailto:WhalesEC2021@hotmail.com" style="color: white; margin: 0 10px; text-decoration: none;">اتصل بنا</a>
+    </p>
+</footer>
+
+</body>
+</html>

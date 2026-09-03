@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>دليل المبتدئين الكامل: من الفيديو الخام إلى المحتوى الاحترافي 2024</title>
+    <meta name="description" content="دليل شامل خطوة بخطوة للمبتدئين تماماً. تعلم كيف تحول فيديوهاتك الخام إلى محتوى احترافي جاهز للنشر على جميع المنصات">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="icon" type="image/svg+xml" href="{{ url_for('static', filename='favicon.svg') }}">
+    <style>
+        body {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        .article-header {
+            text-align: center;
+            padding: 60px 20px 30px;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+        }
+        .article-header h1 {
+            color: white;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            line-height: 1.3;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+        .article-meta {
+            color: white;
+            font-size: 1.1em;
+            margin-bottom: 20px;
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .back-btn {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            padding: 10px 25px;
+            border-radius: 20px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 15px;
+            transition: all 0.3s;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+        }
+        .back-btn:hover {
+            background: rgba(255, 255, 255, 0.3);
+            transform: translateY(-2px);
+        }
+        .article-content {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 50px;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+        }
+        .article-content h2 {
+            color: #667eea;
+            font-size: 2em;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #667eea;
+        }
+        .article-content h3 {
+            color: #764ba2;
+            font-size: 1.5em;
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
+        .article-content p {
+            font-size: 1.1em;
+            line-height: 2;
+            color: #333;
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+        .article-content ul, .article-content ol {
+            margin: 20px 0;
+            padding-right: 30px;
+        }
+        .article-content li {
+            font-size: 1.05em;
+            line-height: 1.9;
+            margin-bottom: 15px;
+            color: #444;
+        }
+        .article-content strong {
+            color: #667eea;
+            font-weight: 600;
+        }
+        .step-card {
+            background: linear-gradient(135deg, #667eea15 0%, #764ba215 100%);
+            border-left: 5px solid #667eea;
+            padding: 30px;
+            margin: 30px 0;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        .step-card h3 {
+            color: #667eea;
+            font-size: 1.8em;
+            margin-top: 0;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        .step-number {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 1.4em;
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.3);
+        }
+        .beginner-tip {
+            background: #e8f5e9;
+            border-left: 4px solid #4caf50;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 10px;
+        }
+        .beginner-tip strong {
+            color: #2e7d32;
+        }
+        .warning-box {
+            background: #fff3e0;
+            border-left: 4px solid #ff9800;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 10px;
+        }
+        .warning-box strong {
+            color: #e65100;
+        }
+        .checklist-box {
+            background: white;
+            border: 2px solid #667eea;
+            border-radius: 15px;
+            padding: 25px;
+            margin: 30px 0;
+        }
+        .checklist-box h4 {
+            color: #667eea;
+            margin-bottom: 20px;
+            font-size: 1.4em;
+        }
+        .checklist-box ul {
+            list-style: none;
+            padding: 0;
+        }
+
+.checklist-box li {
+    padding: 12px 15px;
+    display: flex;
+    align-items: flex-start;
+    gap: 15px; /* مسافة بين المربع والنص */
+    border-bottom: 1px solid #eee;
+}
+
+.checklist-box li:before {
+    content: "☐";
+    font-size: 1.5em;
+    color: #667eea;
+    flex-shrink: 0; /* المربع لا يتقلص */
+    line-height: 1;
+}
+
+.checklist-box li:last-child {
+    border-bottom: none;
+}
+
+        .cta-box {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px;
+            border-radius: 15px;
+            text-align: center;
+            margin: 40px 0;
+        }
+        .cta-box h3 {
+            color: white;
+            margin-bottom: 20px;
+        }
+        .cta-btn {
+            display: inline-block;
+            background: white;
+            color: #667eea;
+            padding: 15px 40px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.2em;
+            transition: all 0.3s;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+        }
+        .cta-btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+        }
+        @media only screen and (max-width: 768px) {
+            .article-header h1 {
+                font-size: 1.8em;
+            }
+            .article-content {
+                padding: 30px 20px;
+                margin: 20px 10px;
+            }
+            .article-content h2 {
+                font-size: 1.6em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="article-header">
+        <h1>🎓 دليل المبتدئين الكامل: من الفيديو الخام إلى المحتوى الاحترافي</h1>
+        <div class="article-meta">
+            <span>📅 ديسمبر 2024</span>
+            <span>⏱️ 12 دقيقة قراءة</span>
+            <span>📚 دليل شامل</span>
+        </div>
+        <a href="/blog" class="back-btn">← العودة للمدونة</a>
+    </div>
+
+    <div class="article-content">
+        <h2>📌 مرحباً بك في عالم صناعة المحتوى!</h2>
+        <p>
+            لديك فيديو رائع على هاتفك أو كاميرتك، لكنك لا تعرف من أين تبدأ؟ لا تقلق! هذا الدليل سيأخذك 
+            <strong>خطوة بخطوة</strong> من الفيديو الخام إلى محتوى احترافي جاهز للنشر على YouTube، TikTok، 
+            Instagram، وجميع المنصات الأخرى.
+        </p>
+
+        <p>
+            <strong>هذا الدليل مصمم خصيصاً للمبتدئين:</strong>
+        </p>
+        <ul>
+            <li>✅ لا تحتاج أي خبرة سابقة</li>
+            <li>✅ لا تحتاج برامج معقدة أو باهظة</li>
+            <li>✅ لا تحتاج معدات احترافية</li>
+            <li>✅ فقط هاتفك وفيديو وحماس!</li>
+        </ul>
+
+        <div class="beginner-tip">
+            <p><strong>💡 نصيحة للمبتدئين:</strong> لا تنتظر حتى تكون "جاهزاً تماماً". أفضل طريقة للتعلم هي 
+            البدء! الفيديو الأول لن يكون مثالياً، وهذا طبيعي. كل منشئي المحتوى المشهورين بدأوا من الصفر.</p>
+        </div>
+
+        <div class="step-card">
+            <h3><span class="step-number">1</span> تحضير الفيديو الخام</h3>
+            
+            <h4 style="color: #764ba2; font-size: 1.3em; margin-top: 20px;">أين تحصل على الفيديو؟</h4>
+            <ul>
+                <li><strong>صور بنفسك:</strong> استخدم كاميرا هاتفك (أسهل طريقة للبدء)</li>
+                <li><strong>Screen Recording:</strong> سجل شاشة حاسوبك أو هاتفك (للشروحات التقنية)</li>
+                <li><strong>مكتبات مجانية:</strong> Pexels، Pixabay (فيديوهات مجانية بدون حقوق)</li>
+            </ul>
+
+            <h4 style="color: #764ba2; font-size: 1.3em; margin-top: 20px;">نصائح التصوير الأساسية:</h4>
+            <ul>
+                <li><strong>الإضاءة:</strong> صور في مكان مضاء جيداً (قرب نافذة = إضاءة مجانية ممتازة!)</li>
+                <li><strong>الاستقرار:</strong> استخدم حامل هاتف أو اسند هاتفك على شيء ثابت</li>
+                <li><strong>الصوت:</strong> صور في مكان هادئ، أو استخدم سماعة هاتفك كميكروفون</li>
+                <li><strong>الاتجاه:</strong> 
+                    <ul>
+                        <li>عمودي (Portrait) لـ TikTok، Reels، Snapchat</li>
+                        <li>أفقي (Landscape) لـ YouTube</li>
+                    </ul>
+                </li>
+            </ul>
+
+            <div class="warning-box">
+                <p><strong>⚠️ تجنب هذه الأخطاء:</strong></p>
+                <ul>
+                    <li>❌ التصوير ضد الضوء (وجهك سيكون مظلم)</li>
+                    <li>❌ الكاميرا تهتز (يبدو غير احترافي)</li>
+                    <li>❌ ضجيج خلفي عالٍ (يشتت المشاهد)</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="step-card">
+            <h3><span class="step-number">2</span> تحليل وتخطيط المحتوى</h3>
+            
+            <p>قبل التقسيم، افهم فيديوك جيداً:</p>
+
+            <h4 style="color: #764ba2; font-size: 1.3em; margin-top: 20px;">اسأل نفسك:</h4>
+            <ul>
+                <li><strong>كم مدة الفيديو؟</strong> (مثال: 10 دقائق)</li>
+                <li><strong>ما الهدف من الفيديو؟</strong> (تعليم، ترفيه، توثيق)</li>
+                <li><strong>على أي منصات سأنشره؟</strong> (YouTube، TikTok، Instagram، كلها؟)</li>
+                <li><strong>هل يوجد أجزاء "ذهبية"؟</strong> (أفضل اللحظات التي يمكن اقتطاعها)</li>
+            </ul>
+
+            <h4 style="color: #764ba2; font-size: 1.3em; margin-top: 20px;">خطة التقسيم:</h4>
+            <p>بناءً على إجاباتك، اختر استراتيجية:</p>
+            
+            <table style="width: 100%; border-collapse: collapse; margin: 20px 0;">
+                <thead style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white;">
+                    <tr>
+                        <th style="padding: 15px; text-align: right;">إذا كنت تريد</th>
+                        <th style="padding: 15px; text-align: right;">استخدم</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr style="background: #f5f5f5;">
+                        <td style="padding: 12px;">نشر الفيديو على YouTube كاملاً</td>
+                        <td style="padding: 12px;"><strong>لا تقسم</strong> - انشره كما هو</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 12px;">إنشاء 5-10 مقاطع قصيرة لـ TikTok/Reels</td>
+                        <td style="padding: 12px;"><strong>استخراج مقاطع</strong> (15-30 ثانية)</td>
+                    </tr>
+                    <tr style="background: #f5f5f5;">
+                        <td style="padding: 12px;">تقسيم لأجزاء متساوية</td>
+                        <td style="padding: 12px;"><strong>تقسيم بعدد الأجزاء</strong> (مثلاً 10 أجزاء)</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 12px;">كل جزء مدته محددة</td>
+                        <td style="padding: 12px;"><strong>تقسيم بالثواني</strong> (مثلاً 60 ثانية/جزء)</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="beginner-tip">
+                <p><strong>💡 للمبتدئين:</strong> إذا كنت محتاراً، ابدأ بـ "استخراج مقاطع". اختر 3-5 لحظات 
+                قوية (كل واحدة 20-30 ثانية) وانشرها على TikTok وReels. هذه أسهل وأسرع طريقة للبدء!</p>
+            </div>
+        </div>
+
+        <div class="step-card">
+            <h3><span class="step-number">3</span> تقسيم الفيديو باستخدام SplitMyVideo</h3>
+            
+            <p><strong>الآن الخطوة الأهم - التقسيم الفعلي!</strong></p>
+
+            <h4 style="color: #764ba2; font-size: 1.3em; margin-top: 20px;">الطريقة خطوة بخطوة:</h4>
+            
+            <ol style="background: #f8f9ff; padding: 25px; border-radius: 10px; border-right: 4px solid #667eea;">
+                <li><strong>افتح الموقع:</strong> <a href="/" style="color: #667eea;">SplitMyVideo.com</a></li>
+                <li><strong>ارفع الفيديو:</strong> اضغط على منطقة الرفع أو اسحب الملف</li>
+                <li><strong>انتظر التحميل:</strong> سترى شريط تقدم</li>
+                <li><strong>اختر طريقة التقسيم:</strong>
+                    <ul>
+                        <li><strong>تقسيم بعدد الأجزاء:</strong> أدخل العدد (مثلاً 5 أجزاء)</li>
+                        <li><strong>تقسيم بالثواني:</strong> أدخل المدة (مثلاً 30 ثانية)</li>
+                        <li><strong>استخراج مقاطع:</strong> أدخل البداية والنهاية لكل مقطع</li>
+                    </ul>
+                </li>
+                <li><strong>الإعدادات الإضافية (اختياري):</strong>
+                    <ul>
+                        <li>التداخل: أضف 1-2 ثانية للانتقال السلس</li>
+                        <li>الجودة: اختر "سريع" للتوازن بين الجودة والسرعة</li>
+                    </ul>
+                </li>
+                <li><strong>اضغط "ابدأ التقسيم":</strong> انتظر المعالجة (قد تستغرق 2-5 دقائق)</li>
+                <li><strong>حمّل النتائج:</strong> اضغط "تحميل الكل" أو حمّل كل جزء على حدة</li>
+            </ol>
+
+            <div class="warning-box">
+                <p><strong>⚠️ ملاحظة مهمة:</strong> إذا كان الفيديو كبير (أكثر من 500 MB)، قد يستغرق التحميل والمعالجة 
+                وقتاً أطول. كن صبوراً!</p>
+            </div>
+        </div>
+
+        <div class="cta-box">
+            <h3>✂️ جاهز لتجربة التقسيم؟</h3>
+            <p>ابدأ الآن مجاناً ولا تحتاج حتى لإنشاء حساب!</p>
+            <a href="/" class="cta-btn">قسّم فيديوك الأول →</a>
+        </div>
+
+        <div class="step-card">
+            <h3><span class="step-number">4</span> تحسين المقاطع (اختياري لكن موصى به)</h3>
+            
+            <p>الآن لديك مقاطع مقسمة، لكن يمكنك جعلها أفضل!</p>
+
+            <h4 style="color: #764ba2; font-size: 1.3em; margin-top: 20px;">باستخدام هاتفك (أدوات مجانية):</h4>
+            
+            <p><strong>لـ TikTok/Instagram Reels:</strong></p>
+            <ul>
+                <li><strong>CapCut (مجاني):</strong> أفضل تطبيق للمبتدئين
+                    <ul>
+                        <li>أضف نصوص تلقائية</li>
+                        <li>أضف موسيقى من المكتبة</li>
+                        <li>أضف تأثيرات بصرية بسيطة</li>
+                    </ul>
+                </li>
+                <li><strong>InShot (مجاني):</strong> بديل ممتاز
+                    <ul>
+                        <li>اقتصاص/تعديل نسبة العرض</li>
+                        <li>إضافة نصوص وملصقات</li>
+                    </ul>
+                </li>
+            </ul>
+
+            <p><strong>أساسيات التحسين:</strong></p>
+            <ul>
+                <li><strong>أضف نصوص (Captions):</strong> 85% من المشاهدين بدون صوت!</li>
+                <li><strong>موسيقى خلفية:</strong> استخدم أصوات ترندينج من TikTok</li>
+                <li><strong>Hook قوي:</strong> تأكد أن أول 3 ثواني جذابة</li>
+                <li><strong>CTA في النهاية:</strong> "تابع للمزيد!" أو "شارك مع صديق!"</li>
+            </ul>
+
+            <div class="beginner-tip">
+                <p><strong>💡 نصيحة:</strong> لا تبالغ في التحسين! الأصالة أهم من المونتاج المعقد. 
+                فيديو بسيط لكن صادق أفضل من فيديو مليء بالتأثيرات لكن مصطنع.</p>
+            </div>
+        </div>
+
+        <div class="step-card">
+            <h3><span class="step-number">5</span> النشر على المنصات</h3>
+            
+            <p>الآن الجزء المثير - مشاركة محتواك مع العالم!</p>
+
+            <h4 style="color: #764ba2; font-size: 1.3em; margin-top: 20px;">خطة النشر للمبتدئين:</h4>
+
+            <p><strong>اليوم 1: TikTok</strong></p>
+            <ul>
+                <li>افتح تطبيق TikTok</li>
+                <li>اضغط "+" (إنشاء)</li>
+                <li>اختر "رفع" (Upload)</li>
+                <li>اختر المقطع الأول</li>
+                <li>أضف وصف جذاب مع 3-5 هاشتاجات</li>
+                <li>انشر!</li>
+            </ul>
+
+            <p><strong>اليوم 1 (بعد ساعة): Instagram Reels</strong></p>
+            <ul>
+                <li>افتح Instagram</li>
+                <li>اضغط "+" → Reel</li>
+                <li>ارفع نفس المقطع</li>
+                <li>أضف وصف ونفس الهاشتاجات</li>
+                <li>انشر!</li>
+            </ul>
+
+            <p><strong>اليوم 2-5: كرر مع المقاطع الأخرى</strong></p>
+            <ul>
+                <li>مقطع واحد يومياً على TikTok وReels</li>
+                <li>لا تنشر كل شيء دفعة واحدة!</li>
+            </ul>
+
+            <h4 style="color: #764ba2; font-size: 1.3em; margin-top: 20px;">أفضل أوقات النشر (للمبتدئين):</h4>
+            <ul>
+                <li><strong>TikTok/Instagram:</strong> 7-9 صباحاً، 12-1 ظهراً، 7-9 مساءً</li>
+                <li><strong>الأيام الأفضل:</strong> الخميس والجمعة</li>
+            </ul>
+
+            <div class="warning-box">
+                <p><strong>⚠️ خطأ شائع للمبتدئين:</strong> نشر كل المقاطع في نفس اليوم. هذا يجعل المنصات تعتبرك 
+                "spam" ويقلل وصولك. انشر مقطع واحد يومياً أو كل يومين.</p>
+            </div>
+        </div>
+
+        <div class="step-card">
+            <h3><span class="step-number">6</span> قياس الأداء والتحسين</h3>
+            
+            <p>بعد أسبوع من النشر، حان وقت التحليل:</p>
+
+            <h4 style="color: #764ba2; font-size: 1.3em; margin-top: 20px;">ما الذي تراقبه:</h4>
+            <ul>
+                <li><strong>عدد المشاهدات:</strong> كم شخص شاهد؟</li>
+                <li><strong>معدل الإكمال:</strong> كم % شاهدوا حتى النهاية؟ (الهدف: 50%+)</li>
+                <li><strong>الإعجابات والتعليقات:</strong> ما مستوى التفاعل؟</li>
+                <li><strong>المشاركات:</strong> كم شخص شارك المقطع؟</li>
+                <li><strong>المتابعون الجدد:</strong> كم متابع جديد؟</li>
+            </ul>
+
+            <h4 style="color: #764ba2; font-size: 1.3em; margin-top: 20px;">أسئلة للتحسين:</h4>
+            <ul>
+                <li>ما المقطع الذي حقق أفضل أداء؟ لماذا؟</li>
+                <li>في أي وقت نشرت الأفضل؟</li>
+                <li>ما نوع المحتوى الذي أحبه جمهوري؟</li>
+                <li>هل الهاشتاجات كانت فعالة؟</li>
+            </ul>
+
+            <div class="beginner-tip">
+                <p><strong>💡 للمبتدئين:</strong> لا تتوقع ملايين المشاهدات في الفيديو الأول! حتى 100-500 مشاهدة 
+                هي بداية رائعة. استمر في النشر وتحسين محتواك، النمو سيأتي تدريجياً.</p>
+            </div>
+        </div>
+
+        <h2>📋 Checklist الفيديو المثالي (للمبتدئين)</h2>
+        
+        <div class="checklist-box">
+            <h4>✅ قبل نشر أي فيديو، تأكد من:</h4>
+            <ul>
+                <li>الإضاءة جيدة والفيديو واضح</li>
+                <li>الصوت مسموع بدون ضجيج عالٍ</li>
+                <li>المدة مناسبة (15-60 ثانية للمقاطع القصيرة)</li>
+                <li>أول 3 ثواني جذابة</li>
+                <li>أضفت نصوص (Captions) إذا تكلمت</li>
+                <li>الوصف يشرح الفيديو بوضوح</li>
+                <li>أضفت 3-5 هاشتاجات ذات صلة</li>
+                <li>نسبة العرض صحيحة (عمودي للمقاطع القصيرة)</li>
+            </ul>
+        </div>
+
+        <h2>💪 نصائح للاستمرار والنجاح</h2>
+
+        <h3>1. الاتساق أهم من الكمال</h3>
+        <p>
+            فيديو بسيط منشور أفضل من فيديو "مثالي" غير منشور. انشر بانتظام ولو مرة واحدة في الأسبوع.
+        </p>
+
+        <h3>2. تعلم من منشئي المحتوى الآخرين</h3>
+        <p>
+            شاهد 10-15 فيديو ناجح في مجالك. ماذا يفعلون؟ كيف يبدأون؟ كيف ينهون؟ تعلم وطبّق.
+        </p>
+
+        <h3>3. اصبر على النتائج</h3>
+        <p>
+            معظم منشئي المحتوى الناجحين استغرقوا 6-12 شهر لبناء جمهور. لا تستسلم بعد أسبوعين!
+        </p>
+
+        <h3>4. استمتع بالعملية</h3>
+        <p>
+            إذا لم تستمتع بإنشاء المحتوى، سيكون من الصعب الاستمرار. اختر مواضيع تحبها فعلاً.
+        </p>
+
+        <h2>🎯 الخلاصة</h2>
+        <p>
+            رحلة ألف ميل تبدأ بخطوة واحدة. الآن لديك كل المعرفة التي تحتاجها لتبدأ:
+        </p>
+        <ol>
+            <li>✅ صور فيديو بسيط (لا تحتاج معدات احترافية)</li>
+            <li>✅ قسّمه باستخدام SplitMyVideo</li>
+            <li>✅ حسّنه قليلاً (نصوص، موسيقى)</li>
+            <li>✅ انشره على TikTok وInstagram</li>
+            <li>✅ راقب الأداء وتعلم</li>
+            <li>✅ كرر وحسّن</li>
+        </ol>
+
+        <p style="font-size: 1.3em; color: #667eea; font-weight: bold; text-align: center; margin: 30px 0;">
+            أهم شيء: ابدأ الآن! 🚀
+        </p>
+
+        <div class="cta-box">
+            <h3>🎬 ابدأ رحلتك كصانع محتوى اليوم!</h3>
+            <p>قسّم فيديوك الأول مجاناً واحصل على أول 100 مشاهدة</p>
+            <a href="/" class="cta-btn">ابدأ الآن - لا تحتاج حساب →</a>
+        </div>
+
+        <hr style="margin: 40px 0; border: none; border-top: 2px solid #eee;">
+
+        <h3>📚 اقرأ أيضاً:</h3>
+        <ul style="list-style: none; padding: 0;">
+            <li style="margin-bottom: 15px;">
+                <a href="/blog/common-video-splitting-mistakes" style="color: #667eea; font-size: 1.1em; text-decoration: none;">
+                    ⚠️ 7 أخطاء قاتلة يجب تجنبها →
+                </a>
+            </li>
+            <li style="margin-bottom: 15px;">
+                <a href="/blog/split-video-for-tiktok" style="color: #667eea; font-size: 1.1em; text-decoration: none;">
+                    🎵 دليل تقسيم الفيديو لـ TikTok →
+                </a>
+            </li>
+            <li style="margin-bottom: 15px;">
+                <a href="/blog/video-splitting-strategies" style="color: #667eea; font-size: 1.1em; text-decoration: none;">
+                    💡 استراتيجيات زيادة المشاهدات →
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <footer style="background: rgba(0,0,0,0.3); color: white; padding: 30px; text-align: center;">
+        <p>&copy; 2024 SplitMyVideo. جميع الحقوق محفوظة.</p>
+        <p style="margin-top: 10px;">
+            <a href="/" style="color: white; margin: 0 10px;">الصفحة الرئيسية</a>
+            <a href="/blog" style="color: white; margin: 0 10px;">المدونة</a>
+            <a href="mailto:WhalesEC2021@hotmail.com" style="color: white; margin: 0 10px;">اتصل بنا</a>
+        </p>
+    </footer>
+</body>
+</html>

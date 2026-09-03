@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>كيف تقسم فيديو YouTube لمشاركته على Instagram - دليل شامل 2024</title>
+    <meta name="description" content="دليل خطوة بخطوة لتقسيم فيديوهات YouTube الطويلة لمشاركتها على Instagram Reels والمنشورات العادية. نصائح احترافية لزيادة المشاهدات والتفاعل">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="icon" type="image/svg+xml" href="{{ url_for('static', filename='favicon.svg') }}">
+    <style>
+        body {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        
+        .article-header {
+            text-align: center;
+            padding: 60px 20px 30px;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+        }
+        
+        .article-header h1 {
+            color: white;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            line-height: 1.3;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+        
+        .article-meta {
+            color: white;
+            font-size: 1.1em;
+            margin-bottom: 20px;
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .back-btn {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            padding: 10px 25px;
+            border-radius: 20px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 15px;
+            transition: all 0.3s;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+        }
+        
+        .back-btn:hover {
+            background: rgba(255, 255, 255, 0.3);
+            transform: translateY(-2px);
+        }
+        
+        .article-content {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 50px;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+        }
+        
+        .article-content h2 {
+            color: #667eea;
+            font-size: 2em;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #667eea;
+        }
+        
+        .article-content h3 {
+            color: #764ba2;
+            font-size: 1.5em;
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
+        
+        .article-content p {
+            font-size: 1.1em;
+            line-height: 2;
+            color: #333;
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+        
+        .article-content ul,
+        .article-content ol {
+            margin: 20px 0;
+            padding-right: 30px;
+        }
+        
+        .article-content li {
+            font-size: 1.05em;
+            line-height: 1.9;
+            margin-bottom: 15px;
+            color: #444;
+        }
+        
+        .article-content strong {
+            color: #667eea;
+            font-weight: 600;
+        }
+        
+        .highlight-box {
+            background: linear-gradient(135deg, #667eea15 0%, #764ba215 100%);
+            border-left: 4px solid #667eea;
+            padding: 25px;
+            margin: 30px 0;
+            border-radius: 10px;
+        }
+        
+        .highlight-box h4 {
+            color: #667eea;
+            margin-bottom: 15px;
+            font-size: 1.3em;
+        }
+        
+        .pro-tip {
+            background: #fffbea;
+            border-left: 4px solid #ffc107;
+            padding: 20px;
+            margin: 25px 0;
+            border-radius: 8px;
+        }
+        
+        .pro-tip strong {
+            color: #f57c00;
+        }
+        
+        .cta-box {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px;
+            border-radius: 15px;
+            text-align: center;
+            margin: 40px 0;
+        }
+        
+        .cta-box h3 {
+            color: white;
+            margin-bottom: 20px;
+        }
+        
+        .cta-btn {
+            display: inline-block;
+            background: white;
+            color: #667eea;
+            padding: 15px 40px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.2em;
+            transition: all 0.3s;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+        }
+        
+        .cta-btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+        }
+        
+        @media only screen and (max-width: 768px) {
+            .article-header h1 {
+                font-size: 1.8em;
+            }
+            
+            .article-content {
+                padding: 30px 20px;
+                margin: 20px 10px;
+            }
+            
+            .article-content h2 {
+                font-size: 1.6em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="article-header">
+        <h1>📸 كيف تقسم فيديو YouTube الطويل لمشاركته على Instagram</h1>
+        <div class="article-meta">
+            <span>📅 ديسمبر 2024</span>
+            <span>⏱️ 8 دقائق قراءة</span>
+            <span>✍️ فريق SplitMyVideo</span>
+        </div>
+        <a href="/blog" class="back-btn">← العودة للمدونة</a>
+    </div>
+
+    <div class="article-content">
+        <h2>📌 المقدمة</h2>
+        <p>
+            لديك فيديو رائع على YouTube مدته 10 دقائق وتريد مشاركته على Instagram؟ المشكلة أن Instagram لديه حدود صارمة 
+            على مدة الفيديو. لكن لا تقلق! في هذا الدليل الشامل، سنعلمك كيف تحول فيديوهاتك الطويلة إلى محتوى مثالي 
+            لـ Instagram بطريقة احترافية تزيد من المشاهدات والتفاعل.
+        </p>
+
+        <div class="highlight-box">
+            <h4>⏱️ حدود مدة الفيديو على Instagram:</h4>
+            <ul>
+                <li><strong>المنشورات العادية (Feed):</strong> حتى 60 ثانية</li>
+                <li><strong>Instagram Reels:</strong> حتى 90 ثانية (الأفضل: 15-30 ثانية)</li>
+                <li><strong>Instagram Stories:</strong> 15 ثانية لكل ستوري (يمكن نشر متعددة)</li>
+                <li><strong>IGTV (الآن مدمج في Feed):</strong> حتى 60 دقيقة</li>
+            </ul>
+        </div>
+
+        <h2>🎯 لماذا يجب أن تقسم فيديوهاتك لـ Instagram؟</h2>
+        
+        <h3>1. متطلبات المنصة</h3>
+        <p>
+            Instagram مصمم للمحتوى القصير والسريع. خوارزمية Instagram تفضل الفيديوهات القصيرة التي تحافظ على 
+            انتباه المشاهد. الفيديوهات التي مدتها 15-30 ثانية تحصل على أعلى معدلات إكمال مشاهدة، وهذا يعني 
+            وصول أكبر وتفاعل أفضل.
+        </p>
+
+        <h3>2. زيادة معدل المشاهدة</h3>
+        <p>
+            عندما تقسم فيديو 10 دقائق إلى 10 مقاطع دقيقة واحدة، فإنك تزيد فرص المشاهدة الكاملة. المستخدم الذي 
+            قد لا يشاهد فيديو 10 دقائق، سيشاهد بسهولة مقطع دقيقة واحدة. هذا يعني معدلات إكمال أعلى، مما يرسل 
+            إشارات إيجابية لخوارزمية Instagram.
+        </p>
+
+        <h3>3. إنشاء سلاسل محتوى (Content Series)</h3>
+        <p>
+            تقسيم الفيديو الطويل إلى سلسلة من المقاطع القصيرة يخلق توقعاً وترقباً لدى جمهورك. يمكنك نشر "الجزء 1" 
+            اليوم، و"الجزء 2" غداً، مما يبقي جمهورك متفاعلاً ويعود لحسابك باستمرار.
+        </p>
+
+        <h2>🚀 دليل خطوة بخطوة: كيف تقسم فيديو YouTube لـ Instagram</h2>
+
+        <h3>الخطوة 1: تحليل محتوى الفيديو</h3>
+        <p>
+            قبل أن تبدأ بالتقسيم، شاهد الفيديو كاملاً وحدد:
+        </p>
+        <ul>
+            <li><strong>اللحظات الذهبية:</strong> أكثر اللحظات إثارة أو فائدة</li>
+            <li><strong>نقاط التحول:</strong> أماكن طبيعية للتوقف والبدء</li>
+            <li><strong>المحتوى المستقل:</strong> أجزاء يمكن فهمها بدون سياق</li>
+            <li><strong>الـ Hooks:</strong> بدايات قوية تجذب الانتباه</li>
+        </ul>
+
+        <h3>الخطوة 2: اختيار استراتيجية التقسيم</h3>
+        
+        <div class="pro-tip">
+            <p><strong>💡 نصيحة محترف:</strong> لا تقسم الفيديو بطريقة عشوائية! اختر واحدة من هذه الاستراتيجيات:</p>
+        </div>
+
+        <p><strong>استراتيجية أ: التقسيم المتساوي</strong></p>
+        <p>
+            مثالي للمحتوى التعليمي أو الشروحات. قسّم الفيديو إلى أجزاء متساوية (مثلاً 60 ثانية لكل جزء). 
+            هذا يعمل بشكل جيد عندما يكون المحتوى متوازن ولا توجد لحظات ذروة واضحة.
+        </p>
+
+        <p><strong>استراتيجية ب: اقتطاع اللحظات الذهبية</strong></p>
+        <p>
+            استخرج فقط أفضل اللحظات من الفيديو الطويل. هذا مثالي للـ Reels! اختر 5-10 لحظات قوية 
+            (كل واحدة 15-30 ثانية) واصنع منها Reels منفصلة. كل Reel يكون مستقل بذاته وجذاب.
+        </p>
+
+        <p><strong>استراتيجية ج: السلاسل المترابطة</strong></p>
+        <p>
+            قسّم الفيديو إلى سلسلة مترابطة (Part 1, Part 2, إلخ). كل جزء ينتهي بـ "تابع في الجزء التالي"، 
+            مما يشجع المتابعين على العودة لحسابك لمشاهدة البقية. رائع لبناء جمهور متفاعل!
+        </p>
+
+        <h3>الخطوة 3: استخدام SplitMyVideo للتقسيم</h3>
+        
+        <ol>
+            <li><strong>ارفع الفيديو:</strong> اذهب إلى <a href="/" style="color: #667eea;">SplitMyVideo.com</a> وارفع فيديو YouTube الخاص بك</li>
+            <li><strong>اختر طريقة التقسيم:</strong>
+                <ul>
+                    <li><strong>تقسيم بعدد الأجزاء:</strong> إذا كنت تريد 10 أجزاء متساوية</li>
+                    <li><strong>تقسيم بالثواني:</strong> إذا كنت تريد كل جزء 60 ثانية</li>
+                    <li><strong>استخراج مقاطع:</strong> إذا كنت تريد اقتطاع لحظات محددة</li>
+                </ul>
+            </li>
+            <li><strong>ضبط التداخل:</strong> أضف 1-2 ثانية تداخل بين الأجزاء لضمان عدم فقدان أي لحظة</li>
+            <li><strong>اختر الجودة:</strong> استخدم "سريع" للتوازن الأمثل بين الجودة والسرعة</li>
+            <li><strong>ابدأ التقسيم:</strong> انقر "ابدأ التقسيم" وانتظر المعالجة</li>
+            <li><strong>حمّل الأجزاء:</strong> حمّل جميع الأجزاء دفعة واحدة أو كل جزء على حدة</li>
+        </ol>
+
+        <div class="cta-box">
+            <h3>🎬 جاهز لتقسيم فيديوهاتك؟</h3>
+            <p>ابدأ الآن مجاناً وحوّل فيديوهاتك الطويلة إلى محتوى مثالي لـ Instagram!</p>
+            <a href="/" class="cta-btn">قسّم فيديوك الآن →</a>
+        </div>
+
+        <h2>✨ نصائح احترافية لزيادة المشاهدات على Instagram</h2>
+
+        <h3>1. الـ 3 ثواني الأولى حاسمة</h3>
+        <p>
+            على Instagram، لديك 3 ثواني فقط لجذب انتباه المشاهد. تأكد من أن كل مقطع يبدأ بشيء مثير أو مفاجئ أو مثير للفضول. 
+            استخدم عناوين قوية، حركات سريعة، أو أسئلة تشد الانتباه.
+        </p>
+
+        <h3>2. استخدم نسبة العرض للارتفاع المناسبة</h3>
+        <ul>
+            <li><strong>Reels:</strong> 9:16 (عمودي كامل) - الأكثر فعالية</li>
+            <li><strong>Feed Posts:</strong> 1:1 (مربع) أو 4:5 (عمودي)</li>
+            <li><strong>Stories:</strong> 9:16 (عمودي كامل)</li>
+        </ul>
+
+        <h3>3. أضف نصوص (Captions)</h3>
+        <p>
+            85% من مستخدمي Instagram يشاهدون الفيديوهات بدون صوت! أضف نصوص واضحة على الفيديو لضمان وصول رسالتك 
+            حتى للمشاهدين الصامتين.
+        </p>
+
+        <h3>4. استخدم Hashtags بذكاء</h3>
+        <p>
+            استخدم 5-10 هاشتاجات ذات صلة. امزج بين الهاشتاجات الشائعة (مليون+ منشور) والمتوسطة (10 ألف - 500 ألف) 
+            والمتخصصة (أقل من 10 آلاف). هذا يزيد فرص الظهور في صفحات الاستكشاف.
+        </p>
+
+        <h3>5. انشر في الأوقات المثلى</h3>
+        <p>
+            أفضل أوقات للنشر على Instagram (بتوقيت الشرق الأوسط):
+        </p>
+        <ul>
+            <li><strong>الأحد - الخميس:</strong> 8-9 صباحاً، 12-1 ظهراً، 7-9 مساءً</li>
+            <li><strong>الجمعة - السبت:</strong> 11 صباحاً - 2 ظهراً</li>
+        </ul>
+
+        <h2>🎓 دراسة حالة: نجاح حقيقي</h2>
+        
+        <div class="highlight-box">
+            <h4>📈 مثال واقعي:</h4>
+            <p>
+                منشئ محتوى تعليمي كان لديه فيديو YouTube مدته 15 دقيقة عن "أساسيات البرمجة". حصل على 5,000 مشاهدة على YouTube.
+            </p>
+            <p><strong>ماذا فعل؟</strong></p>
+            <ul>
+                <li>قسّم الفيديو إلى 10 Reels (كل واحد 60-90 ثانية)</li>
+                <li>نشر Reel واحد يومياً على مدى 10 أيام</li>
+                <li>استخدم نفس الهاشتاجات لكل الأجزاء</li>
+                <li>أضاف "الجزء X من 10" في كل عنوان</li>
+            </ul>
+            <p><strong>النتيجة:</strong></p>
+            <ul>
+                <li>✅ 250,000 مشاهدة إجمالية على Instagram (50x أكثر من YouTube!)</li>
+                <li>✅ 3,500 متابع جديد خلال 10 أيام</li>
+                <li>✅ معدل تفاعل 12% (ممتاز لـ Instagram)</li>
+                <li>✅ عودة المتابعين يومياً لمشاهدة الجزء التالي</li>
+            </ul>
+        </div>
+
+        <h2>⚠️ أخطاء شائعة يجب تجنبها</h2>
+
+        <h3>1. التقسيم في منتصف الجملة</h3>
+        <p>
+            لا تقطع في لحظات غير طبيعية! تأكد من أن كل جزء له بداية ونهاية واضحة. المشاهد يجب أن يشعر بأنه شاهد 
+            محتوى كامل، وليس جزء مقطوع.
+        </p>
+
+        <h3>2. جعل كل جزء طويل جداً</h3>
+        <p>
+            حتى لو Instagram يسمح بـ 90 ثانية للـ Reels، الأفضل أن تبقى في 15-30 ثانية. الفيديوهات الأقصر تحصل 
+            على معدلات إكمال مشاهدة أعلى بكثير.
+        </p>
+
+        <h3>3. عدم إضافة قيمة لكل جزء</h3>
+        <p>
+            كل مقطع يجب أن يقدم قيمة بمفرده. إذا كان المشاهد يحتاج لمشاهدة 10 أجزاء ليفهم شيء واحد، سيتركك في الجزء الثاني.
+        </p>
+
+        <h2>📊 قياس النجاح</h2>
+        <p>
+            بعد نشر مقاطعك على Instagram، راقب هذه المقاييس:
+        </p>
+        <ul>
+            <li><strong>معدل الإكمال:</strong> كم % من المشاهدين أنهوا المقطع؟ (الهدف: 70%+)</li>
+            <li><strong>المشاركات (Shares):</strong> كم شخص شارك المقطع؟ (كلما زاد، زاد الوصول)</li>
+            <li><strong>الحفظ (Saves):</strong> مؤشر قوي على جودة المحتوى</li>
+            <li><strong>التعليقات:</strong> علامة على التفاعل الحقيقي</li>
+            <li><strong>نمو المتابعين:</strong> هل زاد عدد متابعيك؟</li>
+        </ul>
+
+        <h2>🎯 الخلاصة</h2>
+        <p>
+            تقسيم فيديوهات YouTube لمشاركتها على Instagram ليس فقط ضرورة تقنية - إنه استراتيجية تسويقية ذكية تزيد 
+            من وصولك وتفاعلك بشكل كبير. باتباع الخطوات والنصائح في هذا الدليل، ستتمكن من تحويل محتوى YouTube 
+            الخاص بك إلى محتوى Instagram فيروسي يحقق ملايين المشاهدات.
+        </p>
+
+        <p>
+            <strong>الخطوات الأساسية:</strong>
+        </p>
+        <ol>
+            <li>حلل فيديوك وحدد اللحظات الذهبية</li>
+            <li>اختر استراتيجية التقسيم المناسبة</li>
+            <li>استخدم SplitMyVideo للتقسيم بجودة عالية</li>
+            <li>حسّن كل مقطع للـ 3 ثواني الأولى</li>
+            <li>أضف نصوص وهاشتاجات ذكية</li>
+            <li>انشر في الأوقات المثلى</li>
+            <li>راقب المقاييس وحسّن باستمرار</li>
+        </ol>
+
+        <div class="cta-box">
+            <h3>🚀 ابدأ رحلتك الآن!</h3>
+            <p>حوّل فيديوهاتك الطويلة إلى محتوى Instagram احترافي في دقائق</p>
+            <a href="/" class="cta-btn">جرّب SplitMyVideo مجاناً →</a>
+        </div>
+
+        <hr style="margin: 40px 0; border: none; border-top: 2px solid #eee;">
+
+        <h3>📚 اقرأ أيضاً:</h3>
+        <ul style="list-style: none; padding: 0;">
+            <li style="margin-bottom: 15px;">
+                <a href="/blog/split-video-for-tiktok" style="color: #667eea; font-size: 1.1em; text-decoration: none;">
+                    🎵 كيف تقسم الفيديو لـ TikTok →
+                </a>
+            </li>
+            <li style="margin-bottom: 15px;">
+                <a href="/blog/split-video-for-snapchat" style="color: #667eea; font-size: 1.1em; text-decoration: none;">
+                    👻 دليل تقسيم الفيديو لـ Snapchat →
+                </a>
+            </li>
+            <li style="margin-bottom: 15px;">
+                <a href="/blog/video-sizes-all-platforms" style="color: #667eea; font-size: 1.1em; text-decoration: none;">
+                    📱 أفضل أحجام الفيديو لكل منصة →
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <footer style="background: rgba(0,0,0,0.3); color: white; padding: 30px; text-align: center;">
+        <p>&copy; 2024 SplitMyVideo. جميع الحقوق محفوظة.</p>
+        <p style="margin-top: 10px;">
+            <a href="/" style="color: white; margin: 0 10px;">الصفحة الرئيسية</a>
+            <a href="/blog" style="color: white; margin: 0 10px;">المدونة</a>
+            <a href="/about" style="color: white; margin: 0 10px;">من نحن</a>
+            <a href="mailto:WhalesEC2021@hotmail.com" style="color: white; margin: 0 10px;">اتصل بنا</a>
+        </p>
+    </footer>
+</body>
+</html>

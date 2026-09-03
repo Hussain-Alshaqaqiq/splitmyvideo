@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google AdSense Verification Code -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5538584874036951"
+     crossorigin="anonymous"></script>
+
+    <title>SplitMyVideo - قسّم فيديوهاتك بسهولة | أداة مجانية لتقسيم الفيديو</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="أداة مجانية لتقسيم الفيديو أونلاين. قسّم فيديوهاتك إلى أجزاء متعددة بسهولة. ندعم جميع الصيغ: MP4, AVI, MOV, MKV. سريع وآمن ومجاني تماماً.">
+    <meta name="keywords" content="تقسيم فيديو, قص فيديو, أداة فيديو مجانية, تحرير فيديو, split video, video cutter">
+    <meta name="author" content="SplitMyVideo">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="SplitMyVideo - قسّم فيديوهاتك بسهولة">
+    <meta property="og:description" content="أداة مجانية لتقسيم الفيديو أونلاين بجودة عالية">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.splitmyvideo.com">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="{{ url_for('static', filename='favicon.svg') }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ url_for('static', filename='favicon-32x32.png') }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ url_for('static', filename='favicon-16x16.png') }}">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ url_for('static', filename='favicon-192x192.png') }}">
+    
+
+</head>
+<body>
+    <!-- Sticky Banner Ad -->
+    <div class="ad-sticky-banner" id="stickyBannerAd">
+        <div class="ad-content">
+            <!-- Google AdSense Code Here - Sticky Banner -->
+                <ins class="adsbygoogle"
+                    style="display:block"
+                    data-ad-client="ca-pub-5538584874036951"
+                    data-ad-slot="1234567890"
+                    data-ad-format="auto"
+                    data-full-width-responsive="true"></ins>
+                <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+        </div>
+    </div>
+
+    <!-- Left Sidebar Ad -->
+    <div class="ad-sidebar-container ad-sidebar-left">
+        <div class="ad-sidebar-content">
+            <!-- Google AdSense Code Here - Left Sidebar -->
+            <ins class="adsbygoogle"
+                style="display:block"
+                data-ad-client="ca-pub-5538584874036951"
+                data-ad-slot="1234567890"
+                data-ad-format="auto"
+                data-full-width-responsive="true"></ins>
+            <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </div>
+    </div>
+
+    <!-- Right Sidebar Ad -->
+    <div class="ad-sidebar-container ad-sidebar-right">
+        <div class="ad-sidebar-content">
+            <!-- Google AdSense Code Here - Right Sidebar -->
+            <ins class="adsbygoogle"
+                style="display:block"
+                data-ad-client="ca-pub-5538584874036951"
+                data-ad-slot="1234567890"
+                data-ad-format="auto"
+                data-full-width-responsive="true"></ins>
+            <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </div>
+    </div>
+
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <h1>🎬 تقسيم الفيديوهات</h1>
+            <p>قسم مقاطع الفيديو إلى أجزاء متساوية بسهولة</p>
+            <div style="display: flex; gap: 10px; justify-content: center; margin-top: 15px; flex-wrap: wrap;">
+                <a href="/convert" class="btn btn-secondary">تحويل الفيديو</a>
+                <a href="/audio" class="btn btn-secondary">تحويل الصوت 🎵</a>
+            </div>
+        </header>
+
+        <!-- Ad Slot 1: Top Banner (After Header) -->
+        <div class="ad-container desktop-ad">
+          <ins class="adsbygoogle"
+           style="display:block"
+           data-ad-client="ca-pub-5538584874036951"
+           data-ad-slot="1234567890"
+           data-ad-format="horizontal"
+           data-full-width-responsive="true"></ins>
+         </div>
+
+<!-- للجوال - إعلان أصغر -->
+       <div class="ad-container mobile-ad">
+         <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-client="ca-pub-5538584874036951"
+         data-ad-slot="1234567890"
+         data-ad-format="rectangle"
+         data-full-width-responsive="true"></ins>
+        </div>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Upload Section -->
+            <div class="card upload-card">
+                <div class="card-header">
+                    <h2>📤 رفع الفيديو</h2>
+                </div>
+                <div class="card-body">
+                    <div class="upload-area" id="uploadArea">
+                        <div class="upload-icon">🎥</div>
+                        <p class="upload-text">اسحب وأفلت الفيديو هنا</p>
+                        <p class="upload-subtext">أو</p>
+                        <label for="videoInput" class="btn btn-primary" onclick="event.stopPropagation()">اختر ملف</label>
+                        <input type="file" id="videoInput" accept="video/*" hidden>
+                        <p class="upload-info">الصيغ المدعومة: MP4, AVI, MOV, MKV, FLV, WMV, WEBM</p>
+                    </div>
+                    
+                    <!-- Video Info (Hidden initially) -->
+                    <div class="video-info" id="videoInfo" style="display: none;">
+                        <div class="info-item">
+                            <span class="info-label">📁 اسم الملف:</span>
+                            <span class="info-value" id="fileName"></span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">⏱️ المدة:</span>
+                            <span class="info-value" id="videoDuration"></span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">📏 الحجم:</span>
+                            <span class="info-value" id="fileSize"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Service Selection Tabs -->
+            <div class="card split-card" id="splitCard" style="display: none;">
+                <div class="card-header">
+                    <h2>✂️ اختر نوع الخدمة</h2>
+                </div>
+                <div class="card-body">
+                    <!-- Tabs Navigation -->
+                    <div class="tabs-nav">
+                        <button class="tab-btn active" data-tab="byParts">تقسيم بعدد الأجزاء</button>
+                        <button class="tab-btn" data-tab="bySeconds">تقسيم بالثواني</button>
+                        <button class="tab-btn" data-tab="extractClips">اقتطاع مقاطع</button>
+                    </div>
+
+                    <!-- Tab 1: Split by Number of Parts -->
+                    <div class="tab-content active" id="tab-byParts">
+                        <div class="form-group">
+                            <label for="numParts">عدد الأجزاء المطلوبة:</label>
+                            <div class="input-group">
+                                <button class="btn-counter" id="decreaseBtn">-</button>
+                                <input type="number" id="numParts" value="2" min="2" max="20">
+                                <button class="btn-counter" id="increaseBtn">+</button>
+                            </div>
+                            <p class="input-hint">مدة كل جزء: <span id="partDuration">--</span></p>
+                        </div>
+                        
+                        <!-- Overlap Option -->
+                        <div class="form-group">
+                            <label for="overlapSeconds">
+                                <input type="checkbox" id="enableOverlap" style="margin-left: 8px;">
+                                تفعيل التداخل بين الأجزاء
+                            </label>
+                            <div class="overlap-settings" id="overlapSettings" style="display: none; margin-top: 15px;">
+                                <label for="overlapSeconds" style="font-size: 1rem; opacity: 0.9;">عدد ثواني التداخل:</label>
+                                <div class="input-group" style="margin-top: 10px;">
+                                    <button class="btn-counter" id="decreaseOverlapBtn">-</button>
+                                    <input type="number" id="overlapSeconds" value="5" min="1" max="30">
+                                    <button class="btn-counter" id="increaseOverlapBtn">+</button>
+                                </div>
+                                <p class="input-hint" style="margin-top: 8px;">
+                                    💡 كل جزء سيبدأ من آخر <span id="overlapDisplay">5</span> ثواني من الجزء السابق
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Quality Selection -->
+                        <div class="form-group">
+                            <label for="qualityPreset">
+                                <span style="font-size: 1.1rem;">⚙️ جودة المعالجة:</span>
+                            </label>
+                            <select id="qualityPreset" class="quality-select">
+                                <option value="ultrafast">🚀 جودة جيدة جدا - سرعة عالية</option>
+                                <option value="veryfast" selected>⚡ [ جودة عالية - سرعة متوسطة ] (موصى به)</option>
+                            </select>
+                            <div style="margin-top: 15px; padding: 15px; background: rgba(99, 102, 241, 0.1); border-radius: 10px; border-right: 4px solid #6366f1;">
+                                <p style="margin: 0; font-size: 0.95rem; opacity: 0.9;">
+                                    ⏱️ الوقت المتوقع: <span id="estimatedTime" style="color: #bddfff; font-weight: 600;">--</span>
+                                </p>
+                                <p style="margin: 8px 0 0 0; font-size: 0.85rem; opacity: 0.7;" id="qualityDescription">
+                                    جودة ممتازة مع سرعة متوسطة - مثالي لمعظم الاستخدامات
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <button class="btn btn-success btn-split" id="splitBtn">
+                            <span class="btn-icon">✂️</span>
+                            ابدأ التقسيم
+                        </button>
+                    </div>
+
+                    <!-- Tab 2: Split by Seconds -->
+                    <div class="tab-content" id="tab-bySeconds">
+                        <div class="form-group">
+                            <label for="secondsPerPart">مدة كل جزء بالثواني:</label>
+                            <div class="input-group">
+                                <button class="btn-counter" id="decreaseSecondsBtn">-</button>
+                                <input type="number" id="secondsPerPart" value="10" min="1" max="3600">
+                                <button class="btn-counter" id="increaseSecondsBtn">+</button>
+                            </div>
+                            <p class="input-hint">عدد الأجزاء المتوقعة: <span id="expectedParts">--</span></p>
+                            <p class="input-hint" style="color: #888; font-size: 0.9rem; margin-top: 5px;">
+                                💡 الجزء الأخير قد يكون أقصر من باقي الأجزاء
+                            </p>
+                        </div>
+                        
+                        <!-- Overlap Option for Split by Seconds -->
+                        <div class="form-group">
+                            <label for="enableOverlapSeconds">
+                                <input type="checkbox" id="enableOverlapSeconds" style="margin-left: 8px;">
+                                تفعيل التداخل بين الأجزاء
+                            </label>
+                            <div class="overlap-settings" id="overlapSettingsSeconds" style="display: none; margin-top: 15px;">
+                                <label for="overlapSecondsValue" style="font-size: 1rem; opacity: 0.9;">عدد ثواني التداخل:</label>
+                                <div class="input-group" style="margin-top: 10px;">
+                                    <button class="btn-counter" id="decreaseOverlapSecondsBtn">-</button>
+                                    <input type="number" id="overlapSecondsValue" value="5" min="1" max="30">
+                                    <button class="btn-counter" id="increaseOverlapSecondsBtn">+</button>
+                                </div>
+                                <p class="input-hint" style="margin-top: 8px;">
+                                    💡 كل جزء سيبدأ من آخر <span id="overlapSecondsDisplay">5</span> ثواني من الجزء السابق
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Quality Selection for Seconds -->
+                        <div class="form-group">
+                            <label for="qualityPresetSeconds">
+                                <span style="font-size: 1.1rem;">⚙️ جودة المعالجة:</span>
+                            </label>
+                            <select id="qualityPresetSeconds" class="quality-select">
+                                <option value="ultrafast">🚀 جودة جيدة جدا - سرعة عالية</option>
+                                <option value="veryfast" selected>⚡ [ جودة عالية - سرعة متوسطة ] (موصى به)</option>
+                            </select>
+                            <div style="margin-top: 15px; padding: 15px; background: rgba(99, 102, 241, 0.1); border-radius: 10px; border-right: 4px solid #6366f1;">
+                                <p style="margin: 0; font-size: 0.95rem; opacity: 0.9;">
+                                    ⏱️ الوقت المتوقع: <span id="estimatedTimeSeconds" style="color: #bddfff; font-weight: 600;">--</span>
+                                </p>
+                                <p style="margin: 8px 0 0 0; font-size: 0.85rem; opacity: 0.7;" id="qualityDescriptionSeconds">
+                                    جودة ممتازة مع سرعة متوسطة - مثالي لمعظم الاستخدامات
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <button class="btn btn-success btn-split" id="splitBySecondsBtn">
+                            <span class="btn-icon">✂️</span>
+                            ابدأ التقسيم
+                        </button>
+                    </div>
+
+                    <!-- Tab 3: Extract Clips -->
+                    <div class="tab-content" id="tab-extractClips">
+                        <div class="form-group">
+                            <label>المقاطع المطلوب اقتطاعها (حد أقصى 20 مقطع):</label>
+                            <div id="clipsContainer">
+                                <!-- Clip 1 -->
+                                <div class="clip-input-group" data-clip="1">
+                                    <div class="clip-header">
+                                        <span class="clip-number">المقطع 1</span>
+                                    </div>
+                                    <div class="clip-times">
+                                        <div class="time-input">
+                                            <label>من (ثانية):</label>
+                                            <input type="number" class="clip-start" min="0" step="0.1" value="0" placeholder="0">
+                                        </div>
+                                        <div class="time-input">
+                                            <label>إلى (ثانية):</label>
+                                            <input type="number" class="clip-end" min="0" step="0.1" value="10" placeholder="10">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div style="display: flex; gap: 10px; margin-top: 15px;">
+                                <button class="btn btn-secondary" id="addClipBtn" style="flex: 1;">
+                                    <span class="btn-icon">➕</span>
+                                    إضافة مقطع
+                                </button>
+                                <button class="btn btn-secondary" id="removeClipBtn" style="flex: 1; display: none;">
+                                    <span class="btn-icon">➖</span>
+                                    إزالة آخر مقطع
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <button class="btn btn-success btn-split" id="extractClipsBtn">
+                            <span class="btn-icon">✂️</span>
+                            اقتطاع المقاطع
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Progress Section -->
+            <div class="card progress-card" id="progressCard" style="display: none;">
+                <div class="card-header">
+                    <h2>⚙️ جاري المعالجة...</h2>
+                </div>
+                <div class="card-body">
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="progressFill"></div>
+                    </div>
+                    <p class="progress-text" id="progressText">0%</p>
+                    <p class="progress-status" id="progressStatus">جاري تحليل الفيديو...</p>
+                </div>
+            </div>
+
+            <!-- Results Section -->
+            <div class="card results-card" id="resultsCard" style="display: none;">
+                <div class="card-header">
+                    <h2>✅ اكتمل التقسيم!</h2>
+                </div>
+                <div class="card-body">
+                    <div class="results-grid" id="resultsGrid">
+                        <!-- Results will be added here dynamically -->
+                    </div>
+
+                    <!-- Ad Slot 2: Middle (Before Download Buttons) -->
+                    <div class="ad-container ad-middle">
+                        <!-- Google AdSense Code Here -->
+                        <ins class="adsbygoogle"
+                            style="display:block"
+                            data-ad-client="ca-pub-5538584874036951"
+                            data-ad-slot="1234567890"
+                            data-ad-format="auto"
+                            data-full-width-responsive="true"></ins>
+                        <script>
+                            (adsbygoogle = window.adsbygoogle || []).push({});
+                        </script>
+                    </div>
+
+                    <div class="results-actions">
+                        <button class="btn btn-primary" id="downloadAllBtn">
+                            <span class="btn-icon">📥</span>
+                            تحميل الكل
+                        </button>
+                        <button class="btn btn-secondary" id="resetBtn">
+                            <span class="btn-icon">🔄</span>
+                            فيديو جديد
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Ad Slot 3: Bottom (Before Footer) -->
+        <div class="ad-container ad-bottom">
+            <!-- Google AdSense Code Here -->
+            <ins class="adsbygoogle"
+                style="display:block"
+                data-ad-client="ca-pub-5538584874036951"
+                data-ad-slot="1234567890"
+                data-ad-format="auto"
+                data-full-width-responsive="true"></ins>
+            <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </div>
+
+<section style="max-width: 900px; margin: 60px auto; padding: 30px; background: rgba(255, 255, 255, 0.1); backdrop-filter: blur(10px); border-radius: 20px; box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);">
+    <h2 style="color: white; font-size: 2em; margin-bottom: 20px; text-align: center;">🎬 ما هو SplitMyVideo؟</h2>
+    <p style="color: white; font-size: 1.1em; line-height: 1.8; text-align: justify;">SplitMyVideo هي أداة مجانية ومتطورة لتقسيم مقاطع الفيديو أونلاين بسهولة وسرعة. سواء كنت منشئ محتوى على YouTube، أو تريد مشاركة مقاطع على Instagram، أو تحتاج لتقسيم فيديو تعليمي، فإن أداتنا توفر لك الحل الأمثل.</p>
+    
+    <h3 style="color: white; font-size: 1.5em; margin-top: 30px; margin-bottom: 15px;">✨ لماذا تختار SplitMyVideo؟</h3>
+    <ul style="color: white; font-size: 1.05em; line-height: 2; list-style-position: inside;">
+        <li><strong>مجاني تماماً:</strong> لا رسوم، لا اشتراكات، لا قيود</li>
+        <li><strong>سريع وفعّال:</strong> معالجة سريعة بجودة عالية</li>
+        <li><strong>سهل الاستخدام:</strong> واجهة بسيطة وسهلة للجميع</li>
+        <li><strong>آمن:</strong> حذف تلقائي للملفات بعد المعالجة</li>
+        <li><strong>متعدد اللغات:</strong> ندعم 8 لغات عالمية</li>
+        <li><strong>جميع الصيغ:</strong> MP4, AVI, MOV, MKV, وأكثر</li>
+    </ul>
+    
+    <h3 style="color: white; font-size: 1.5em; margin-top: 30px; margin-bottom: 15px;">🚀 كيف تعمل الأداة؟</h3>
+    <ol style="color: white; font-size: 1.05em; line-height: 2; list-style-position: inside;">
+        <li>ارفع فيديوك بالسحب والإفلات أو اختيار الملف</li>
+        <li>اختر طريقة التقسيم (بعدد الأجزاء أو بالثواني أو استخراج مقاطع)</li>
+        <li>انقر "ابدأ التقسيم" وانتظر المعالجة</li>
+        <li>حمّل الأجزاء أو حمّل الكل دفعة واحدة</li>
+    </ol>
+    
+    <p style="text-align: center; margin-top: 30px;">
+        <a href="/how-to-use" style="display: inline-block; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 15px 40px; border-radius: 25px; text-decoration: none; font-weight: bold; font-size: 1.1em; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); transition: transform 0.3s;">
+            📖 اقرأ الدليل الكامل →
+        </a>
+    </p>
+</section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>تم التطوير بواسطة WhalesEC2021@hotmail.com 💻 | SplitMyVideo © 2025</p>
+            <div class="footer-links">
+                <a href="/privacy">سياسة الخصوصية</a>
+                <span>|</span>
+                <a href="/terms">شروط الاستخدام</a>
+                <span>|</span>
+                <a href="/about">من نحن</a>
+                <span>|</span>    
+                <a href="/faq"> FAQ</a>
+                <a href="/blog" style="color: white; text-decoration: none; margin: 0 15px; font-weight: bold;">📝 المدونة</a>
+
+            </div>
+        </footer>
+    </div>
+
+    <!-- Loading Overlay -->
+    <div class="loading-overlay" id="loadingOverlay" style="display: none;">
+        <div class="spinner"></div>
+        <p>جاري الرفع...</p>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/ads-manager.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>

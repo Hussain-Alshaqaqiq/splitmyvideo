@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>من نحن - SplitMyVideo</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <style>
+        .policy-content {
+            background: rgba(255, 255, 255, 0.95);
+            color: #333;
+            padding: 40px;
+            border-radius: 20px;
+            max-width: 900px;
+            margin: 20px auto;
+            line-height: 1.8;
+        }
+        .policy-content h2 {
+            color: #667eea;
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
+        .policy-content h3 {
+            color: #764ba2;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+        .policy-content ul {
+            margin: 15px 0;
+            padding-right: 25px;
+        }
+        .policy-content li {
+            margin: 8px 0;
+        }
+        .back-link {
+            display: inline-block;
+            margin: 20px;
+            padding: 10px 20px;
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            text-decoration: none;
+            border-radius: 10px;
+            transition: all 0.3s;
+        }
+        .back-link:hover {
+            background: rgba(255, 255, 255, 0.3);
+        }
+        .feature-box {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 15px 0;
+            border-right: 4px solid #667eea;
+        }
+    </style>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="{{ url_for('static', filename='favicon.svg') }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ url_for('static', filename='favicon-32x32.png') }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ url_for('static', filename='favicon-16x16.png') }}">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ url_for('static', filename='favicon-192x192.png') }}">
+    
+
+</head>
+<body>
+    <div class="container">
+        <a href="/" class="back-link">← العودة للصفحة الرئيسية</a>
+        
+        <div class="policy-content">
+            <h1>من نحن</h1>
+
+            <h2>مرحباً بك في SplitMyVideo! 🎬</h2>
+            <p>نحن منصة مجانية وسهلة الاستخدام لتقسيم مقاطع الفيديو إلى أجزاء متعددة بكل بساطة وسرعة.</p>
+
+            <h2>قصتنا</h2>
+            <p>بدأت فكرة SplitMyVideo من حاجة حقيقية في عالم صناعة المحتوى الرقمي. لاحظنا أن الكثير من صناع المحتوى يواجهون صعوبة في تقسيم الفيديوهات الطويلة إلى أجزاء مناسبة لمنصات التواصل الاجتماعي المختلفة. من هنا قررنا إنشاء أداة بسيطة وفعالة تحل هذه المشكلة.</p>
+
+            <h2>مهمتنا</h2>
+            <p>نهدف إلى تسهيل عملية تقسيم الفيديوهات لصناع المحتوى والمستخدمين العاديين من خلال:</p>
+            <ul>
+                <li>واجهة مستخدم بسيطة وسهلة</li>
+                <li>معالجة سريعة وفعالة</li>
+                <li>خدمة مجانية بالكامل</li>
+                <li>حماية خصوصية المستخدمين</li>
+            </ul>
+
+            <h2>ما الذي يميزنا؟</h2>
+            
+            <div class="feature-box">
+                <h3>🚀 سريع وسهل</h3>
+                <p>لا حاجة لتثبيت أي برامج. ارفع الفيديو، اختر عدد الأجزاء، وحمل النتيجة في دقائق.</p>
+            </div>
+
+            <div class="feature-box">
+                <h3>🔒 آمن وخاص</h3>
+                <p>جميع الملفات يتم حذفها تلقائياً بعد 30 دقيقة. نحن لا نحتفظ بأي نسخ من ملفاتك.</p>
+            </div>
+
+            <div class="feature-box">
+                <h3>✂️ مرن ومتقدم</h3>
+                <p>يمكنك التحكم في عدد الأجزاء، وإضافة تداخل بين الأجزاء، ومشاركة النتائج مباشرة على السوشيال ميديا.</p>
+            </div>
+
+            <div class="feature-box">
+                <h3>💯 مجاني تماماً</h3>
+                <p>جميع المميزات متاحة مجاناً بدون قيود أو اشتراكات.</p>
+            </div>
+
+            <h2>المميزات الرئيسية</h2>
+            <ul>
+                <li>✅ رفع الفيديو بالسحب والإفلات (Drag & Drop)</li>
+                <li>✅ تقسيم تلقائي متساوي</li>
+                <li>✅ خيار التداخل بين الأجزاء</li>
+                <li>✅ دعم صيغ متعددة (MP4, AVI, MOV, MKV, إلخ)</li>
+                <li>✅ تحميل كل جزء على حدة</li>
+                <li>✅ تحميل جميع الأجزاء في ملف واحد مضغوط</li>
+                <li>✅ مشاركة مباشرة على منصات التواصل الاجتماعي</li>
+                <li>✅ واجهة عصرية وسهلة الاستخدام</li>
+            </ul>
+
+            <h2>لمن هذه الخدمة؟</h2>
+            <p>SplitMyVideo مثالية لـ:</p>
+            <ul>
+                <li>📱 صناع محتوى السوشيال ميديا</li>
+                <li>🎓 المدرسين والطلاب</li>
+                <li>🎬 صناع الأفلام والمونتاج</li>
+                <li>📹 اليوتيوبرز وصناع المحتوى</li>
+                <li>👥 أي شخص يحتاج لتقسيم فيديو بسرعة</li>
+            </ul>
+
+            <h2>التقنيات المستخدمة</h2>
+            <ul>
+                <li>🐍 Python & Flask للخادم</li>
+                <li>🎞️ FFmpeg لمعالجة الفيديو</li>
+                <li>🎨 HTML5, CSS3, JavaScript للواجهة</li>
+                <li>☁️ معالجة سحابية آمنة</li>
+            </ul>
+
+            <h2>التزامنا بالخصوصية</h2>
+            <p>نحن نأخذ خصوصيتك على محمل الجد:</p>
+            <ul>
+                <li>لا نشارك ملفاتك مع أي جهة خارجية</li>
+                <li>جميع الملفات تُحذف تلقائياً بعد 30 دقيقة</li>
+                <li>معالجة محلية آمنة على خوادمنا</li>
+                <li>لا نطلب أي معلومات شخصية</li>
+            </ul>
+
+            <h2>اتصل بنا</h2>
+            <p>نحب أن نسمع منك! سواء كان لديك:</p>
+            <ul>
+                <li>💡 اقتراحات لتحسين الخدمة</li>
+                <li>🐛 تقارير عن مشاكل تقنية</li>
+                <li>❓ أسئلة حول الخدمة</li>
+                <li>💬 أي تعليقات أو ملاحظات</li>
+            </ul>
+            <p>تواصل معنا عبر:</p>
+            <ul>
+                <li>📧 البريد الإلكتروني: WhalesEC2021@hotmail.com</li>
+            </ul>
+
+            <h2>رؤيتنا المستقبلية</h2>
+            <p>نعمل باستمرار على تحسين وتطوير الخدمة. قريباً:</p>
+            <ul>
+                <li>🎨 إضافة مرشحات وتأثيرات على الفيديو</li>
+                <li>✂️ قص مخصص (Custom trimming)</li>
+                <li>🔊 معالجة الصوت منفصلة</li>
+                <li>📱 تطبيق موبايل</li>
+                <li>🌐 دعم المزيد من اللغات</li>
+            </ul>
+
+            <hr style="margin: 30px 0; border: 1px solid #ddd;">
+            
+            <p style="text-align: center; font-size: 1.2em; color: #667eea; font-weight: 600;">
+                شكراً لاستخدامك SplitMyVideo! 🎉
+            </p>
+        </div>
+
+        <a href="/" class="back-link">← العودة للصفحة الرئيسية</a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الأسئلة الشائعة - SplitMyVideo</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}?v=3">
+    <style>
+        .faq-content {
+            background: rgba(255, 255, 255, 0.95);
+            color: #333;
+            padding: 40px;
+            border-radius: 20px;
+            max-width: 900px;
+            margin: 20px auto;
+            line-height: 1.8;
+        }
+        .faq-item {
+            background: rgba(102, 126, 234, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+            border-right: 4px solid #667eea;
+        }
+        .faq-item h3 {
+            color: #667eea;
+            margin-bottom: 10px;
+        }
+        .faq-item p {
+            margin: 0;
+        }
+        .back-link {
+            display: inline-block;
+            margin: 20px;
+            padding: 10px 20px;
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            text-decoration: none;
+            border-radius: 10px;
+            transition: all 0.3s;
+        }
+        .back-link:hover {
+            background: rgba(255, 255, 255, 0.3);
+        }
+    </style>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="{{ url_for('static', filename='favicon.svg') }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ url_for('static', filename='favicon-32x32.png') }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ url_for('static', filename='favicon-16x16.png') }}">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ url_for('static', filename='favicon-192x192.png') }}">
+    
+
+</head>
+<body>
+    <div class="container">
+        <a href="/" class="back-link">← العودة للصفحة الرئيسية</a>
+        
+        <div class="faq-content">
+            <h1>الأسئلة الشائعة (FAQ)</h1>
+            <p>إجابات على الأسئلة الأكثر شيوعاً حول SplitMyVideo</p>
+
+            <div class="faq-item">
+                <h3>❓ ما هو SplitMyVideo؟</h3>
+                <p>SplitMyVideo هي أداة مجانية عبر الإنترنت تتيح لك تقسيم مقاطع الفيديو الطويلة إلى أجزاء متعددة بسهولة، دون الحاجة لتثبيت أي برامج.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>💰 هل الخدمة مجانية؟</h3>
+                <p>نعم! جميع مميزات SplitMyVideo متاحة مجاناً بالكامل بدون أي رسوم أو اشتراكات.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>📏 ما هو الحد الأقصى لحجم الفيديو؟</h3>
+                <p>يمكنك رفع ملفات فيديو حتى 500 ميجابايت. إذا كان ملفك أكبر، يُرجى ضغطه أولاً.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>🎬 ما هي صيغ الفيديو المدعومة؟</h3>
+                <p>ندعم جميع الصيغ الشائعة بما في ذلك: MP4، AVI، MOV، MKV، FLV، WMV، WEBM وغيرها.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>⏱️ كم يستغرق تقسيم الفيديو؟</h3>
+                <p>يعتمد الوقت على حجم الفيديو وعدد الأجزاء. عادةً ما يستغرق من دقيقة إلى 5 دقائق للفيديوهات العادية.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>🔒 هل ملفاتي آمنة؟</h3>
+                <p>نعم! جميع الملفات يتم معالجتها على خوادمنا الآمنة ويتم حذفها تلقائياً بعد 30 دقيقة. لا نحتفظ بأي نسخ من ملفاتك.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>✂️ ما هو "التداخل بين الأجزاء"؟</h3>
+                <p>التداخل يعني إضافة ثوانٍ مشتركة بين نهاية جزء وبداية الجزء التالي لضمان عدم فقدان أي لحظات مهمة.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>📱 هل يمكنني استخدام SplitMyVideo على الموبايل؟</h3>
+                <p>نعم! الموقع متجاوب بالكامل ويعمل على جميع الأجهزة: الكمبيوتر، التابلت، والهواتف الذكية.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>🎨 هل ستفقد الفيديوهات جودتها؟</h3>
+                <p>لا! نحافظ على الجودة الأصلية للفيديو قدر الإمكان. يمكنك أيضاً اختيار مستوى الجودة المطلوب.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>🔄 هل يمكنني تحويل صيغة الفيديو أيضاً؟</h3>
+                <p>نعم! بالإضافة إلى التقسيم، نوفر أدوات لتحويل صيغ الفيديو واستخراج وتحويل الصوت.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>💾 كيف أحفظ الأجزاء المقسمة؟</h3>
+                <p>يمكنك تحميل كل جزء على حدة، أو تحميل جميع الأجزاء دفعة واحدة في ملف ZIP مضغوط.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>📤 هل يمكنني مشاركة الفيديوهات مباشرة؟</h3>
+                <p>نعم! نوفر أزرار مشاركة سريعة لـ WhatsApp، Telegram، Twitter، Snapchat، وTikTok.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>🐛 واجهت مشكلة، ماذا أفعل؟</h3>
+                <p>نأسف لذلك! يُرجى التواصل معنا عبر البريد الإلكتروني: WhalesEC2021@hotmail.com وسنساعدك في أسرع وقت.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>💡 لدي اقتراح لتحسين الخدمة</h3>
+                <p>رائع! نحب أن نسمع منك. أرسل اقتراحاتك إلى WhalesEC2021@hotmail.com</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>🌐 هل تدعمون لغات أخرى؟</h3>
+                <p>حالياً الموقع متاح باللغة العربية، ونعمل على إضافة المزيد من اللغات قريباً.</p>
+            </div>
+
+            <hr style="margin: 30px 0; border: 1px solid #ddd;">
+            
+            <h2>لم تجد إجابة لسؤالك؟</h2>
+            <p>تواصل معنا على: <strong>WhalesEC2021@hotmail.com</strong></p>
+            <p>سنسعد بمساعدتك! 😊</p>
+        </div>
+
+        <a href="/" class="back-link">← العودة للصفحة الرئيسية</a>
+    </div>
+</body>
+</html>

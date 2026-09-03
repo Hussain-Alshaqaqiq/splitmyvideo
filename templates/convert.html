@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google AdSense Verification Code -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5538584874036951"
+     crossorigin="anonymous"></script>
+
+    <title>تحويل صيغ الفيديو - Video Converter</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="{{ url_for('static', filename='favicon.svg') }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ url_for('static', filename='favicon-32x32.png') }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ url_for('static', filename='favicon-16x16.png') }}">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ url_for('static', filename='favicon-192x192.png') }}">
+    
+
+</head>
+<body>
+    <!-- Sticky Banner Ad -->
+    <div class="ad-sticky-banner" id="stickyBannerAd">
+        <div class="ad-content">
+            <!-- Google AdSense Code Here - Sticky Banner -->
+                <ins class="adsbygoogle"
+                    style="display:block"
+                    data-ad-client="ca-pub-5538584874036951"
+                    data-ad-slot="1234567890"
+                    data-ad-format="auto"
+                    data-full-width-responsive="true"></ins>
+                <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+        </div>
+    </div>
+
+    <!-- Left Sidebar Ad -->
+    <div class="ad-sidebar-container ad-sidebar-left">
+        <div class="ad-sidebar-content">
+            <!-- Google AdSense Code Here - Left Sidebar -->
+                <ins class="adsbygoogle"
+                    style="display:block"
+                    data-ad-client="ca-pub-5538584874036951"
+                    data-ad-slot="1234567890"
+                    data-ad-format="auto"
+                    data-full-width-responsive="true"></ins>
+                <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+        </div>
+    </div>
+
+    <!-- Right Sidebar Ad -->
+    <div class="ad-sidebar-container ad-sidebar-right">
+        <div class="ad-sidebar-content">
+            <!-- Google AdSense Code Here - Right Sidebar -->
+                <ins class="adsbygoogle"
+                    style="display:block"
+                    data-ad-client="ca-pub-5538584874036951"
+                    data-ad-slot="1234567890"
+                    data-ad-format="auto"
+                    data-full-width-responsive="true"></ins>
+                <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+        </div>
+    </div>
+
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <h1>🔄 تحويل صيغ الفيديو</h1>
+            <p>حول الفيديو من أي صيغة إلى أخرى بسهولة</p>
+            <div style="display: flex; gap: 10px; justify-content: center; margin-top: 15px; flex-wrap: wrap;">
+                <a href="/" class="btn btn-secondary">← التقسيم</a>
+                <a href="/audio" class="btn btn-secondary">تحويل الصوت 🎵</a>
+            </div>
+        </header>
+
+        <!-- Ad Slot 1: Top Banner (After Header) -->
+        <div class="ad-container ad-top">
+            <!-- Google AdSense Code Here -->
+                <ins class="adsbygoogle"
+                    style="display:block"
+                    data-ad-client="ca-pub-5538584874036951"
+                    data-ad-slot="1234567890"
+                    data-ad-format="auto"
+                    data-full-width-responsive="true"></ins>
+                <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+        </div>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Upload Section -->
+            <div class="card upload-card">
+                <div class="card-header">
+                    <h2>📤 رفع الفيديو</h2>
+                </div>
+                <div class="card-body">
+                    <div class="upload-area" id="uploadArea">
+                        <div class="upload-icon">🎥</div>
+                        <p class="upload-text">اسحب وأفلت الفيديو هنا</p>
+                        <p class="upload-subtext">أو</p>
+                        <label for="videoInput" class="btn btn-primary" onclick="event.stopPropagation()">اختر ملف</label>
+                        <input type="file" id="videoInput" accept="video/*" hidden>
+                        <p class="upload-info">الصيغ المدعومة: MP4, AVI, MOV, MKV, FLV, WMV, WEBM</p>
+                    </div>
+                    
+                    <!-- Video Info (Hidden initially) -->
+                    <div class="video-info" id="videoInfo" style="display: none;">
+                        <div class="info-item">
+                            <span class="info-label">📁 اسم الملف:</span>
+                            <span class="info-value" id="fileName"></span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">📋 الصيغة الحالية:</span>
+                            <span class="info-value" id="currentFormat"></span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">⏱️ المدة:</span>
+                            <span class="info-value" id="videoDuration"></span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">📏 الحجم:</span>
+                            <span class="info-value" id="fileSize"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Convert Settings -->
+            <div class="card split-card" id="convertCard" style="display: none;">
+                <div class="card-header">
+                    <h2>⚙️ إعدادات التحويل</h2>
+                </div>
+                <div class="card-body">
+                    <div class="form-group">
+                        <label for="outputFormat">الصيغة المطلوبة:</label>
+                        <div class="format-grid">
+                            <button class="format-btn" data-format="mp4">
+                                <span class="format-icon">🎬</span>
+                                <span class="format-name">MP4</span>
+                                <span class="format-desc">الأكثر شيوعاً</span>
+                            </button>
+                            <button class="format-btn" data-format="avi">
+                                <span class="format-icon">📹</span>
+                                <span class="format-name">AVI</span>
+                                <span class="format-desc">جودة عالية</span>
+                            </button>
+                            <button class="format-btn" data-format="mov">
+                                <span class="format-icon">🎞️</span>
+                                <span class="format-name">MOV</span>
+                                <span class="format-desc">Apple</span>
+                            </button>
+                            <button class="format-btn" data-format="mkv">
+                                <span class="format-icon">📦</span>
+                                <span class="format-name">MKV</span>
+                                <span class="format-desc">متعدد المسارات</span>
+                            </button>
+                            <button class="format-btn" data-format="webm">
+                                <span class="format-icon">🌐</span>
+                                <span class="format-name">WEBM</span>
+                                <span class="format-desc">الويب</span>
+                            </button>
+                            <button class="format-btn" data-format="flv">
+                                <span class="format-icon">⚡</span>
+                                <span class="format-name">FLV</span>
+                                <span class="format-desc">Flash</span>
+                            </button>
+                            <button class="format-btn" data-format="wmv">
+                                <span class="format-icon">🪟</span>
+                                <span class="format-name">WMV</span>
+                                <span class="format-desc">Windows</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="quality">جودة الفيديو:</label>
+                        <select id="quality" class="quality-select">
+                            <option value="low">منخفضة (حجم أصغر)</option>
+                            <option value="medium" selected>متوسطة (موصى بها)</option>
+                            <option value="high">عالية (حجم أكبر)</option>
+                            <option value="original">الأصلية (نسخ بدون إعادة ترميز)</option>
+                        </select>
+                    </div>
+                    
+                    <button class="btn btn-success btn-split" id="convertBtn" disabled>
+                        <span class="btn-icon">🔄</span>
+                        ابدأ التحويل
+                    </button>
+                </div>
+            </div>
+
+            <!-- Progress Section -->
+            <div class="card progress-card" id="progressCard" style="display: none;">
+                <div class="card-header">
+                    <h2>⚙️ جاري التحويل...</h2>
+                </div>
+                <div class="card-body">
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="progressFill"></div>
+                    </div>
+                    <p class="progress-text" id="progressText">0%</p>
+                    <p class="progress-status" id="progressStatus">جاري تحليل الفيديو...</p>
+                </div>
+            </div>
+
+            <!-- Results Section -->
+            <div class="card results-card" id="resultsCard" style="display: none;">
+                <div class="card-header">
+                    <h2>✅ اكتمل التحويل!</h2>
+                </div>
+                <div class="card-body">
+                    <div class="result-single" id="resultSingle">
+                        <!-- Result will be added here dynamically -->
+                    </div>
+                    <div class="results-actions">
+                        <button class="btn btn-primary" id="downloadBtn">
+                            <span class="btn-icon">📥</span>
+                            تحميل الفيديو
+                        </button>
+                        <button class="btn btn-secondary" id="resetBtn">
+                            <span class="btn-icon">🔄</span>
+                            فيديو جديد
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Ad Slot 3: Bottom (Before Footer) -->
+        <div class="ad-container ad-bottom">
+            <!-- Google AdSense Code Here -->
+                <ins class="adsbygoogle"
+                    style="display:block"
+                    data-ad-client="ca-pub-5538584874036951"
+                    data-ad-slot="1234567890"
+                    data-ad-format="auto"
+                    data-full-width-responsive="true"></ins>
+                <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+        </div>
+        
+        <!-- Footer -->
+        <footer class="footer">
+            <p>تم التطوير بواسطة WhalesEC2021@hotmail.com 💻 | SplitMyVideo © 2025</p>
+            <div class="footer-links">
+                <a href="/privacy">سياسة الخصوصية</a>
+                <span>|</span>
+                <a href="/terms">شروط الاستخدام</a>
+                <span>|</span>
+                <a href="/about">من نحن</a>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Loading Overlay -->
+    <div class="loading-overlay" id="loadingOverlay" style="display: none;">
+        <div class="spinner"></div>
+        <p>جاري الرفع...</p>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/ads-manager.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/convert.js') }}"></script>
+</body>
+</html>
